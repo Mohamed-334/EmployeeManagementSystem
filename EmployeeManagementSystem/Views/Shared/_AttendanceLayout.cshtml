@@ -1,0 +1,27 @@
+﻿@using Repositories.Interfaces;
+@using System.Security.Claims;
+@inject IAttendanceRepository AttRepo
+@{
+    var UserId = User.Claims.FirstOrDefault(id => id.Type == ClaimTypes.NameIdentifier).Value;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attendance</title>
+    <link rel="stylesheet" href="~/css/attend.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Employee Attendance</h1>
+        </header>
+
+        <div class="attendance-list">
+           @RenderBody()
+         </div>
+
+    @* <script src="~/js/attend.js"></script> *@
+</body>
+</html>

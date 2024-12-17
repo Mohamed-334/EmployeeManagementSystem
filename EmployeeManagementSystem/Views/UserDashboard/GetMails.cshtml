@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Report>
+@{
+    Layout = "_AddReportLayout";
+}
+@section CSS{
+    <link rel="stylesheet" href="~/css/Mailbox_media.css">
+    <link rel="stylesheet" href="~/css/Mailbox_style.css">
+}
+<main>
+    <div class="messages_area">
+        @foreach (var item in Model.OrderBy(e => e.SendAt))
+        {
+           <a  asp-action="GetMailInfo" asp-route-MailId="@item.Id" asp-controller="UserDashboard"> 
+                <div class="messages">
+                    <div class="messages_left">
+                        <span>@item.Employee.FullName</span>
+                    </div>
+                    <div class="messages_content">
+                        @item.ReportHeader
+                    </div>
+                    <div class="messages_date">@item.SendAt.ToString("yyyy,MMM,dd")</div>
+                </div>
+           </a>
+
+        }
+
+    </div>
+
+</main>

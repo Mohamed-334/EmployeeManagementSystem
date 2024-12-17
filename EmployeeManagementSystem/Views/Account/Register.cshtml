@@ -1,0 +1,142 @@
+﻿@using Repositories.Interfaces;
+@model RegisterViewModel
+@inject IDepartmentRepository DeptRepo
+@inject IPositionRepository PositionRepo
+@{
+    Layout = "_RegisterLayout";
+    SelectList Depts = new SelectList(DeptRepo.GetAll(), "Id", "DepartmentName");
+    SelectList Positions = new SelectList(PositionRepo.GetAll(), "Id", "PositionName");
+}
+<div class="login-container" id="login">
+
+    <form asp-action="Register" asp-controller="Account" method="post" enctype="multipart/form-data">
+        <div class="header-img">
+        <img id="clickableImage" src="~/img/icon_user.png" alt="user_icon">
+        <input asp-for="Picture" type="file" id="fileInput" style="display: none;" accept="image/*">
+        <span asp-validation-for="Picture" style="color:red"></span>
+        </div>
+    <div class="two-forms">
+    
+        <div class="input-box">
+            <input asp-for="FirstName" type="text" class="input-field" placeholder="Firstname">
+            <i class="bx bx-user"></i>
+                <span asp-validation-for="FirstName" style="color:red"></span>
+
+        </div>
+        <div class="input-box">
+            <input asp-for="LastName" type="text" class="input-field" placeholder="Lastname">
+            <i class="bx bx-user"></i>
+                <span asp-validation-for="LastName" style="color:red"></span>
+
+        </div>
+    </div>
+        <div class="input-box">
+            <input asp-for="Username" type="text" class="input-field" placeholder="Username">
+            <i class="bx bx-user"></i>
+            <span asp-validation-for="Username" style="color:red"></span>
+
+        </div>
+        <div class="two-forms">
+        
+            <div class="input-box">
+                <input asp-for="Email" type="email" class="input-field" placeholder="Email">
+                <i class="bx bx-user"></i>
+                <span asp-validation-for="Email" style="color:red"></span>
+
+            </div>
+            <div class="input-box">
+                <input asp-for="PhoneNumber" type="text" class="input-field" placeholder="Phone Number">
+                <i class="bx bx-user"></i>
+                <span asp-validation-for="PhoneNumber" style="color:red"></span>
+
+            </div>
+        </div>
+
+        
+        <div class="input-box">
+            <input asp-for="Address" type="text" class="input-field" placeholder="Address">
+            <i class="bx bx-user"></i>
+            <span asp-validation-for="Address" style="color:red"></span>
+
+        </div>
+        
+        <div class="two-forms">
+            <div class="input-box">
+                <input asp-for="Password" type="password" class="input-field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+                <span asp-validation-for="Password" style="color:red"></span>
+
+            </div>
+
+            <div class="input-box">
+                <input asp-for="ConfirmPassword" type="password" class="input-field" placeholder="Confirm Password">
+                <i class="bx bx-lock-alt"></i>
+                <span asp-validation-for="ConfirmPassword" style="color:red"></span>
+
+            </div>
+        </div>
+        
+        <div class="input-box">
+            <input asp-for="Role" type="radio" class="radio-field" value="Employee">
+            <label for="employee_AddUser">Employee</label>
+            <input asp-for="Role" type="radio" class="radio-field" value="Admin">
+            <label asp-for="Role">Admin</label>
+
+
+            <span asp-validation-for="Role" style="color:red"></span>
+
+        </div>
+        <div class="two-forms">
+            <div class="input-box">
+                <select asp-for="DepartmentId" id="Dept" onchange="GetPositions()" class="input-field" asp-items="Depts">
+
+                    <option value="0" selected disabled>ٍSelect Department</option>
+                </select>
+
+                <i class="bx bx-lock-alt"></i>
+                <span asp-validation-for="DepartmentId" style="color:red"></span>
+
+            </div>
+
+            <div class="input-box">
+                <select asp-for="PositionId" id="positions" class="input-field" >
+
+                    <option value="0" selected disabled>Select Position</option>
+                </select>
+
+                <i class="bx bx-lock-alt"></i>
+                <span asp-validation-for="DepartmentId" style="color:red"></span>
+
+            </div>
+        </div>
+            
+        
+        <div class="input-box">
+            <input type="submit" class="submit" value="Sign In">
+        </div>
+    
+        </form>
+</div>
+
+@section JS{
+    <script>
+        function GetPositions() {
+            var id = document.getElementById("Dept").value;
+            console.log(id);
+            $.ajax({
+                url: "/Account/GetPosition",
+                data: {
+                    "DeptId" : id
+                },
+                success: function (result) {
+                    document.getElementById("positions").innerHTML = "";
+                    for (let position of result) {
+                        document.getElementById("positions").innerHTML +=
+                            "<option value='" + position.id + "'>" + position.positionName + "</option>";
+
+                    }
+                }
+            })
+        }
+    </script>
+}

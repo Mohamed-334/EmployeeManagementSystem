@@ -1,0 +1,21 @@
+﻿@model Report
+@{
+    Layout = "_AddReportLayout";
+}
+<div class="messages">
+    <div class="messages_left">
+        <p>
+            <span>From: @Model.</span>
+        </p>
+        <p>
+            <span>To: @Model.Employee.FullName</span>
+        </p>
+        <span>Subject:   @Model.ReportHeader</span>
+    </div>
+    <div class="messages_content">
+       <pre>
+            @Model.ReportBody
+       </pre>
+    </div>
+    <div class="messages_date">@Model.SendAt.ToString("yyyy,MMM,dd")</div>
+</div>

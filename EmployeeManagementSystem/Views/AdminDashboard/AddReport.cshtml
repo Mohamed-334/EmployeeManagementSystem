@@ -1,0 +1,31 @@
+﻿@model Report
+@inject IEmployeeRepository EmpRepo
+@{
+    Layout = "_AddReportLayout";
+    SelectList emps = new SelectList(EmpRepo.GetEmployees(),"Id","FullName");
+}
+
+<h2>Reports</h2>
+<div class="reports-container">
+    <div class="reports-form">
+        <h3>Send us a message</h3>
+        <form asp-action="AddReport" asp-controller="AdminDashboard" method="post">
+            <input name="UserName" type="text" placeholder="UserName" value="@User.Identity.Name">
+            <input asp-for="ReportHeader" type="text" placeholder="Report Header" required>
+            <span style="color:red" asp-validation-for="ReportHeader"></span>
+            <textarea asp-for="ReportBody" placeholder="Your Message" rows="4" required></textarea>
+            <span style="color:red" asp-validation-for="ReportBody"></span>
+            <label for="assignEmployee">Add to Employee:</label>
+            <select asp-for="EmployeeId" asp-items="emps">
+                <option value="0" disabled selected>Select an employee</option>
+            </select>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <div class="reports-info">
+        <h3>Reports Information</h3>
+        <p><i class="fas fa-phone"></i> +1 123 456 789</p>
+        <p><i class="fas fa-envelope"></i> info@example.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</p>
+    </div>
+   </div>

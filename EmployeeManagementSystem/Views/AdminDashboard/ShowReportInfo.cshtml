@@ -1,0 +1,23 @@
+﻿@model Report
+    <div class="analytics-head">
+    <h2> <pre>Report Title:
+
+    </pre></h2>
+
+    <p> @Model.ReportHeader</p>
+        <span class="las la-ellipsis-h"></span>
+    </div>
+
+    <div>
+        <div class="analytics-note">
+            <h3>Report Subject :</h3>
+            <pre>
+                @Model.ReportBody
+            </pre>
+        </div>
+        <div>
+            <h4>Created At :</h4>
+            <h6>@Model.SendAt.ToString("dd/MM/yyyy")</h6>
+        </div>
+
+    </div>

@@ -1,0 +1,30 @@
+C:\Users\IT SHOP\Desktop\Project V1\Employee Management\EmployeeManagementDB\bin\Debug\net6.0\AppSettings.json
+C:\Users\IT SHOP\Desktop\Project V1\Employee Management\EmployeeManagementDB\bin\Debug\net6.0\EmployeeManagementDB.deps.json
+C:\Users\IT SHOP\Desktop\Project V1\Employee Management\EmployeeManagementDB\bin\Debug\net6.0\EmployeeManagementDB.runtimeconfig.json
+C:\Users\IT SHOP\Desktop\Project V1\Employee Management\EmployeeManagementDB\bin\Debug\net6.0\EmployeeManagementDB.dll
+C:\Users\IT SHOP\Desktop\Project V1\Employee Management\EmployeeManagementDB\bin\Debug\net6.0\EmployeeManagementDB.pdb
+C:\Users\IT SHOP\Desktop\Project V1\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\EmployeeManagementDB.csproj.AssemblyReference.cache
+C:\Users\IT SHOP\Desktop\Project V1\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\EmployeeManagementDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IT SHOP\Desktop\Project V1\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\EmployeeManagementDB.AssemblyInfoInputs.cache
+C:\Users\IT SHOP\Desktop\Project V1\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\EmployeeManagementDB.AssemblyInfo.cs
+C:\Users\IT SHOP\Desktop\Project V1\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\EmployeeManagementDB.csproj.CoreCompileInputs.cache
+C:\Users\IT SHOP\Desktop\Project V1\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\EmployeeManagementDB.dll
+C:\Users\IT SHOP\Desktop\Project V1\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\refint\EmployeeManagementDB.dll
+C:\Users\IT SHOP\Desktop\Project V1\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\EmployeeManagementDB.pdb
+C:\Users\IT SHOP\Desktop\Project V1\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\EmployeeManagementDB.genruntimeconfig.cache
+C:\Users\IT SHOP\Desktop\Project V1\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\ref\EmployeeManagementDB.dll
+C:\Users\IT SHOP\Desktop\Employee ManageMent System\Employee Management\EmployeeManagementDB\bin\Debug\net6.0\AppSettings.json
+C:\Users\IT SHOP\Desktop\Employee ManageMent System\Employee Management\EmployeeManagementDB\bin\Debug\net6.0\EmployeeManagementDB.deps.json
+C:\Users\IT SHOP\Desktop\Employee ManageMent System\Employee Management\EmployeeManagementDB\bin\Debug\net6.0\EmployeeManagementDB.runtimeconfig.json
+C:\Users\IT SHOP\Desktop\Employee ManageMent System\Employee Management\EmployeeManagementDB\bin\Debug\net6.0\EmployeeManagementDB.dll
+C:\Users\IT SHOP\Desktop\Employee ManageMent System\Employee Management\EmployeeManagementDB\bin\Debug\net6.0\EmployeeManagementDB.pdb
+C:\Users\IT SHOP\Desktop\Employee ManageMent System\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\EmployeeManagementDB.csproj.AssemblyReference.cache
+C:\Users\IT SHOP\Desktop\Employee ManageMent System\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\EmployeeManagementDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IT SHOP\Desktop\Employee ManageMent System\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\EmployeeManagementDB.AssemblyInfoInputs.cache
+C:\Users\IT SHOP\Desktop\Employee ManageMent System\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\EmployeeManagementDB.AssemblyInfo.cs
+C:\Users\IT SHOP\Desktop\Employee ManageMent System\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\EmployeeManagementDB.csproj.CoreCompileInputs.cache
+C:\Users\IT SHOP\Desktop\Employee ManageMent System\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\EmployeeManagementDB.dll
+C:\Users\IT SHOP\Desktop\Employee ManageMent System\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\refint\EmployeeManagementDB.dll
+C:\Users\IT SHOP\Desktop\Employee ManageMent System\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\EmployeeManagementDB.pdb
+C:\Users\IT SHOP\Desktop\Employee ManageMent System\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\EmployeeManagementDB.genruntimeconfig.cache
+C:\Users\IT SHOP\Desktop\Employee ManageMent System\Employee Management\EmployeeManagementDB\obj\Debug\net6.0\ref\EmployeeManagementDB.dll

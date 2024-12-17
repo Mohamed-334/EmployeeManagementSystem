@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #02284f, #429497);
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #003366;
+    letter-spacing: 1px;
+}
+
+.attendance-form {
+    margin-bottom: 30px;
+}
+
+.attendance-form h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #003366;
+    font-weight: 600;
+}
+
+.attendance-form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #003366;
+}
+
+.attendance-form input, 
+.attendance-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s;
+}
+
+.attendance-form input:focus, 
+.attendance-form select:focus {
+    border-color: #003366;
+    outline: none;
+}
+
+.attendance-form button {
+    padding: 12px 18px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.attendance-form button:hover {
+    background-color: #002244;
+}
+
+.attendance-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.attendance-list th, 
+.attendance-list td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.attendance-list th {
+    background-color: #003366;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.attendance-list td {
+    font-size: 1rem;
+}
+
+.attendance-list tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.attendance-list tr:hover {
+    background-color: #eef1f7;
+}
+
+.attendance-list td span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #003366;
+}

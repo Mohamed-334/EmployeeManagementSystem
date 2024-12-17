@@ -1,0 +1,56 @@
+﻿@using System.Security.Claims;
+@inject IJobRepository JobRepo
+@{
+    Layout = "_UserDashboardLayout";
+    var UserId = User.Claims.FirstOrDefault(e => e.Type == ClaimTypes.NameIdentifier).Value;
+}
+@section Cards{
+    <partial name="_EmployeeCardPartial">
+        }
+@section Chart{
+<partial name="_EmployeeChartPartial">
+}
+        <h3>Tasks <small> <a asp-action="GetAllUserTasks" asp-controller="UserDashboard">See all tasks</a> <span class="las la-arrow-right"></span></small></h3>
+<table width="100%">
+    <tbody>
+        @foreach (var item in JobRepo.GetByForeignKey(UserId).Take(5).OrderBy(e => e.Employee.FirstName))
+        {
+            <tr>
+                <td>
+                    <div>
+                        <span class="indicator even"></span>
+                    </div>
+                </td>
+                <td><div style="text-align: left;">@item.TaskName</div></td>
+                <td><div>@item.DeadLine.ToString("yyyy/MM/dd")</div></td>
+                @if (!item.Done)
+                {
+
+                    <td><div id="CompletedTask"><button onclick="TaskCompleted(@item.Id)">Done</button></div> </td>
+                }
+                else
+                {
+                    <td><div><button>✅</button></div> </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+@section JS{
+    <script>
+        function TaskCompleted(id) {
+            console.log(id);
+            $.ajax(
+                {
+                    url: "/UserDashboard/SetTaskDone/"+id,
+                    success: function (result) {
+                        console.log(result);
+                        document.getElementById("CompletedTask").innerHTML = result;
+                    }
+                }
+            )
+           
+        }
+
+    </script>
+}
