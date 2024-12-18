@@ -39,7 +39,13 @@ namespace EmployeeManagementSystem.Controllers
         public IActionResult TakeAttendance(EmployeeAttendance attendance)
         {
             AttRepo.Add(attendance);
-            return RedirectToAction("GetTopUserTasks", "UserDashboard");
+            if (User.IsInRole("Employee"))
+                return RedirectToAction("GetTopUserTasks", "UserDashboard");
+            else if (User.IsInRole("Admin"))
+                return RedirectToAction("GetTopTasks", "AdminDashboard");
+            else
+                return NotFound();
+
         }
         [HttpGet]
         public IActionResult DisplayAttendance()

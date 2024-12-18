@@ -1,12 +1,13 @@
 ﻿using EmployeeManagementDatabase.Data;
 using EmployeeManagementDatabase.Entities;
+using Repositories.Factory;
 using Repository.Interfaces;
 
 namespace Repository
 {
     public class JobRepository : IJobRepository
     {
-        private readonly AppDbContext context = new();
+        private readonly AppDbContext context = AppDbContextFactory.Create();
 
         public IEnumerable<Job> GetAll() => context.Jobs.ToList();
 

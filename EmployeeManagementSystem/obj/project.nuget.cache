@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VAA87LyxyYlAKzmA6fpgXttgRSF0Wog+9V7bxQWyaLknGBFzz8tdPRmOopoxh8sOXQnMF/EiAmTiSB8syW5NYA==",
+  "dgSpecHash": "YoKwVPGLS2kbJynuEIs3qwHBN6NxLjOwXNVSOe8E9YDUVVzY50jWneroSViUaadp+iwIvIvyFj4relGxe+dpfA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
+  "projectFilePath": "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\IT SHOP\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\IT SHOP\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",

@@ -1,5 +1,6 @@
 ﻿using EmployeeManagementDatabase.Data;
 using EmployeeManagementDB.Entities;
+using Repositories.Factory;
 using Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace Repositories
 {
     public class PositionRepository : IPositionRepository
     {
-        private readonly AppDbContext context = new();
+        private readonly AppDbContext context = AppDbContextFactory.Create();
 
         public void Add(Position entity)
         {

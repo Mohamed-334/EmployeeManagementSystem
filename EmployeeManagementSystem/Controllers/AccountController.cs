@@ -3,6 +3,7 @@ using EmployeeManagementSystemWebSite.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Repositories.Interfaces;
+using Repository.Interfaces;
 using System.Diagnostics;
 using System.Security.Claims;
 using System.Text.Json;
@@ -15,12 +16,14 @@ namespace EmployeeManagementSystemWebSite.Controllers
         private readonly UserManager<Employee> userManager;
         private readonly SignInManager<Employee> signIn;
         private readonly IPositionRepository positionRepo;
+        private readonly IDepartmentRepository DeptRepo;
 
-        public AccountController(UserManager<Employee> userManager, SignInManager<Employee> ignIn, IPositionRepository position)
+        public AccountController(UserManager<Employee> userManager, SignInManager<Employee> ignIn, IPositionRepository position, IDepartmentRepository deptRepo)
         {
             this.userManager = userManager;
             this.signIn = ignIn;
             this.positionRepo = position;
+            DeptRepo = deptRepo;
         }
         [HttpGet]
         public IActionResult Login()
@@ -110,6 +113,18 @@ namespace EmployeeManagementSystemWebSite.Controllers
         {
             await signIn.SignOutAsync();
             return RedirectToAction("Login" , "Account");
+        }
+        [HttpGet]
+        public IActionResult GetDepartments(string Role)
+        {
+            var model = new List<Department>();
+            if(Role == "Admin")
+                 model = DeptRepo.GetAll().Where(d => d.DepartmentName.Contains("Adminstration")).ToList();
+
+            else
+                 model = DeptRepo.GetAll().Where(d => !d.DepartmentName.Contains("Adminstration")).ToList();
+
+            return Json(model);
         }
 
         [HttpGet]

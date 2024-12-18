@@ -1,6 +1,7 @@
 ﻿using EmployeeManagementDatabase.Data;
 using EmployeeManagementDatabase.Entities;
 using Microsoft.AspNetCore.Identity;
+using Repositories.Factory;
 using Repository.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace Repository
 {
     public class EmployeeRepository : IEmployeeRepository
     {
-        private readonly AppDbContext context = new();
+        private readonly AppDbContext context = AppDbContextFactory.Create();
 
         public void Add(Employee entity)
         {

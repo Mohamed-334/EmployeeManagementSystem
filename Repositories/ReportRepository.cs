@@ -1,5 +1,6 @@
 ﻿using EmployeeManagementDatabase.Data;
 using EmployeeManagementDatabase.Entities;
+using Repositories.Factory;
 using Repository.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace Repository
 {
     public class ReportRepository : IReportRepository
     {
-        private readonly AppDbContext context = new();
+        private readonly AppDbContext context = AppDbContextFactory.Create();
         public void Delete(Report entity)
         {
             context.Remove(entity);

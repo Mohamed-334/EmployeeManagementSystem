@@ -77,13 +77,13 @@
                             <li><a asp-action="AddVacation" asp-controller="Request">Vacation</a></li>
                             @if (RequestController.EmpAtt.IsStarted && !RequestController.EmpAtt.IsEnded)
                             {
-                                <li><a asp-action="EndWork" asp-controller="Request">EndWork</a></li>
+                                <li><a asp-action="EndWork" asp-controller="Request">End Work</a></li>
 
                             }
                             else if (!RequestController.EmpAtt.IsEnded && !RequestController.EmpAtt.IsStarted)
                             {
-                                <li><a asp-action="StartWork" asp-controller="Request">StartWork</a></li>
-                                <li><a asp-action="EndWork" asp-controller="Request">EndWork</a></li>
+                                <li><a asp-action="StartWork" asp-controller="Request">Start Work</a></li>
+                                <li><a asp-action="EndWork" asp-controller="Request">End Work</a></li>
 
                             }
                             <li><a asp-action="DisplayAttendance" asp-controller="Request">Attendance</a></li>

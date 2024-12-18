@@ -1,4 +1,5 @@
 ﻿using EmployeeManagementDB.Entities;
+using System.Text.Json.Serialization;
 
 namespace EmployeeManagementDatabase.Entities
 {
@@ -8,7 +9,7 @@ namespace EmployeeManagementDatabase.Entities
         public string? EmployeeId { get; set; }
         public string DepartmentName { get; set; }
 
-
+        [JsonIgnore]
         public virtual ICollection<Employee> Employees { get; set; }
     }
 }

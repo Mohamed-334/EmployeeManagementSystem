@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj": {}
+    "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\EmployeeManagementDB\\EmployeeManagementDB.csproj": {
+    "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\EmployeeManagementDB\\EmployeeManagementDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\EmployeeManagementDB\\EmployeeManagementDB.csproj",
+        "projectUniqueName": "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\EmployeeManagementDB\\EmployeeManagementDB.csproj",
         "projectName": "EmployeeManagementDB",
-        "projectPath": "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\EmployeeManagementDB\\EmployeeManagementDB.csproj",
+        "projectPath": "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\EmployeeManagementDB\\EmployeeManagementDB.csproj",
         "packagesPath": "C:\\Users\\IT SHOP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\EmployeeManagementDB\\obj\\",
+        "outputPath": "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\EmployeeManagementDB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\IT SHOP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -93,14 +93,14 @@
         }
       }
     },
-    "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj": {
+    "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
+        "projectUniqueName": "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
         "projectName": "EmployeeManagementSystem",
-        "projectPath": "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
+        "projectPath": "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
         "packagesPath": "C:\\Users\\IT SHOP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\EmployeeManagementSystem\\obj\\",
+        "outputPath": "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\EmployeeManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\IT SHOP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -117,11 +117,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\EmployeeManagementDB\\EmployeeManagementDB.csproj": {
-                "projectPath": "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\EmployeeManagementDB\\EmployeeManagementDB.csproj"
+              "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\EmployeeManagementDB\\EmployeeManagementDB.csproj": {
+                "projectPath": "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\EmployeeManagementDB\\EmployeeManagementDB.csproj"
               },
-              "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\Repositories\\Repositories.csproj": {
-                "projectPath": "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\Repositories\\Repositories.csproj"
+              "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\Repositories\\Repositories.csproj": {
+                "projectPath": "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\Repositories\\Repositories.csproj"
               }
             }
           }
@@ -176,14 +176,14 @@
         }
       }
     },
-    "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\Repositories\\Repositories.csproj": {
+    "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\Repositories\\Repositories.csproj",
+        "projectPath": "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\Repositories\\Repositories.csproj",
         "packagesPath": "C:\\Users\\IT SHOP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\Repositories\\obj\\",
+        "outputPath": "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\IT SHOP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -200,8 +200,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\EmployeeManagementDB\\EmployeeManagementDB.csproj": {
-                "projectPath": "C:\\Users\\IT SHOP\\Desktop\\Employee ManageMent System\\Employee Management\\EmployeeManagementDB\\EmployeeManagementDB.csproj"
+              "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\EmployeeManagementDB\\EmployeeManagementDB.csproj": {
+                "projectPath": "D:\\Programming section\\Projects\\WebSites\\Employee ManageMent System\\Employee Management\\EmployeeManagementDB\\EmployeeManagementDB.csproj"
               }
             }
           }
