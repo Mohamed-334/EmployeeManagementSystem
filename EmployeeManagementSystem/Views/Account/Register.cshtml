@@ -131,7 +131,7 @@
                 success: function (result) {
                     console.log(result)
                     document.getElementById("Dept").innerHTML = "";
-                    document.getElementById("Dept").innerHTML = " <option value='0' selected disabled>Select Department</option>";
+                    document.getElementById("Dept").innerHTML = " <option  selected disabled>Select Department</option>";
                     for (let dept of result) {
                         document.getElementById("Dept").innerHTML +=
                             "<option value='" + dept.id + "'>" + dept.departmentName + "</option>";
@@ -152,7 +152,7 @@
                 success: function (result) {
                     console.log(result)
                     document.getElementById("Dept").innerHTML = "";
-                    document.getElementById("Dept").innerHTML = " <option value='0' selected disabled>ٍSelect Department</option>";
+                    document.getElementById("Dept").innerHTML = " <option  selected disabled>ٍSelect Department</option>";
                     for (let dept of result) {
                         document.getElementById("Dept").innerHTML +=
                             "<option value='" + dept.id + "'>" + dept.departmentName + "</option>";
@@ -173,7 +173,7 @@
                 success: function (result) {
                     console.log(result)
                     document.getElementById("positions").innerHTML = "";
-                    document.getElementById("positions").innerHTML += "<option value='0' selected disabled>Select Position</option>";
+                    document.getElementById("positions").innerHTML += "<option  selected disabled>Select Position</option>";
                     for (let position of result) {
                         document.getElementById("positions").innerHTML +=
                             "<option value='" + position.id + "'>" + position.positionName + "</option>";

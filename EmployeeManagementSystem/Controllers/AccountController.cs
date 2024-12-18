@@ -82,9 +82,12 @@ namespace EmployeeManagementSystemWebSite.Controllers
                 Employee.UserName = VM.Username;
                 Employee.PasswordHash = VM.Password;
 
-                using (BinaryReader br = new BinaryReader(VM.Picture.OpenReadStream()))
+                if(VM.Picture is not  null)
                 {
-                    Employee.ProfilePhoto = br.ReadBytes((int)VM.Picture.Length);
+                    using (BinaryReader br = new BinaryReader(VM.Picture.OpenReadStream()))
+                    {
+                        Employee.ProfilePhoto = br.ReadBytes((int)VM.Picture.Length);
+                    }
                 }
                 Employee.PhoneNumber = VM.PhoneNumber;
                 Employee.Address = VM.Address;

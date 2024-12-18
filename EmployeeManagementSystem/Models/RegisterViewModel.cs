@@ -31,6 +31,7 @@ namespace EmployeeManagementSystemWebSite.Models
         [RegularExpression("^(\\+20|0)?1[0125]\\d{8}$" , ErrorMessage = "Please Enter Validate Number")]
         public string PhoneNumber { get; set; }
         public string Role { get; set; }
-        public IFormFile? Picture { get; set; }
+        [Required]
+        public IFormFile Picture { get; set; }
     }
 }

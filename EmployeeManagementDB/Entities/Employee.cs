@@ -11,7 +11,7 @@ namespace EmployeeManagementDatabase.Entities
         public string Address  { get; set; }
         public int? DepartmentId { get; set; }
         public int? PositionId { get; set; }
-        public byte[]? ProfilePhoto { get; set; }
+        public byte[] ProfilePhoto { get; set; }
         [NotMapped]
         public string FullName {
             get

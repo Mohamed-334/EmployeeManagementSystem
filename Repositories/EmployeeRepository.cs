@@ -1,7 +1,9 @@
 ﻿using EmployeeManagementDatabase.Data;
 using EmployeeManagementDatabase.Entities;
 using Microsoft.AspNetCore.Identity;
+using Repositories.Enum;
 using Repositories.Factory;
+using Repositories.Repo_Tracker;
 using Repository.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -15,19 +17,22 @@ namespace Repository
     public class EmployeeRepository : IEmployeeRepository
     {
         private readonly AppDbContext context = AppDbContextFactory.Create();
+        private readonly EmployeeRepositoryTracker Tracker = EmployeeRepositoryTracker.GetInstance();
 
         public void Add(Employee entity)
         {
             context.Employees.Add(entity);
             context.SaveChanges();
+            Tracker.AddSnapshot(TrackerState.Add, entity);
         }
 
         public void Delete(Employee entity)
         {
             context.Remove(entity);
             context.SaveChanges();
+            Tracker.AddSnapshot(TrackerState.Delete, entity);
         }
-        
+
         public IEnumerable<Employee> GetAdmins()
         {
             var UserRoles = context.UserRoles;
@@ -45,12 +50,18 @@ namespace Repository
                 new EmployeeRole { RoleName = r.Name, employee = e.employee })
                 .Where(e => e.RoleName == "Admin")
                 .Select(e => e.employee).ToList();
+
             return AdminUsers;
         }
 
         public IEnumerable<Employee> GetAll() => context.Employees.ToList();
 
-        public Employee GetById(string id) => context.Employees.Find(id);
+        public Employee GetById(string id) 
+        {
+            var Employee = context.Employees.Find(id);
+            Tracker.AddSnapshot(TrackerState.RetreiveById, Employee);
+            return Employee;
+        }
 
         public IEnumerable<Employee> GetEmployees() 
         {
@@ -82,6 +93,7 @@ namespace Repository
         {
             context.Update(entity);
             context.SaveChanges();
+            Tracker.AddSnapshot(TrackerState.Modify, entity);
         }
     }
 }
