@@ -1,0 +1,350 @@
+﻿@using System.Security.Claims;
+@using EmployeeManagementDatabase.Entities
+@using EmployeeManagementSystem.Controllers;
+@using Repositories.Interfaces
+@using Repository.Interfaces
+@inject IJobRepository JobRepo
+@inject IEmployeeRepository EmpRepo
+@inject IAttendanceRepository AttendanceRepo
+@inject INotificationSeenRepository UserNotifyRepo
+@inject IMailSeenRepository MailSeenRepo
+@{
+    var UserId = User.Claims.First(e => e.Type == ClaimTypes.NameIdentifier).Value;
+    Employee Emp = EmpRepo.GetAll().First(e => e.Id == UserId);
+    var UserEmail = Emp.Email;
+    var UserFirstName = Emp.FirstName;
+    var UserLastName =  Emp.LastName;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <title>Dashboard</title>
+    @RenderSection("CSS",false)
+    <link rel="stylesheet" href="~/css/AdminDash.css">
+    <link rel="stylesheet" href="~/css/AddTask.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" name="" id="sidebar-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-flex">
+                <h3>TeamSynch</h3>
+
+                <div class="brand-icons">
+                    <a style="color:white" asp-action="Profile" asp-controller="UserDashboard"><span class="las la-user-circle"></span></a>
+                    <div class="notification-icon" id="notification-icon">
+                            <partial name="_NotificationIconPartial">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-main">
+            <div class="sidebar-user">
+                <img src="@Url.Action("GetImage" , "AdminDashboard" , new {id = UserId})" alt="">
+                <div>
+                    <h3>@UserFirstName @UserLastName</h3>
+                    <span style="font-weight:500;font-size:14px">@UserEmail</span>
+                </div>
+            </div>
+
+            <div class="sidebar-menu">
+                <div class="menu-head">
+                    <span> Dashboard </span>
+                </div>
+                @if (User.IsInRole("Admin"))
+                {
+                    <ul>
+                        <li>
+                            <a asp-action="GetTopTasks" asp-controller="AdminDashboard">
+                                <span class="las la-check-circle"></span>
+                                Tasks
+                            </a>
+                        </li>
+
+                        <li>
+                            <a asp-action="GetTopEmployees" asp-controller="AdminDashboard">
+                                <span class="las la-users"></span>
+                                Employees
+                            </a>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="menu-head">
+                        <span> Applications </span>
+                    </div>
+                    <ul>
+                        <li class="dropdown">
+                            <span class="las la-exclamation-circle"></span>
+
+                            Request
+
+                            <ul class="dropdown-menu">
+                                <li><a asp-action="AddVacation" asp-controller="Request">Vacation</a></li>
+                                @if (!AttendanceRepo.GetAll().Any(a => a.Date == DateOnly.FromDateTime(DateTime.Now)))
+                                {
+
+                                    @if (RequestController.EmpAtt.IsStarted && !RequestController.EmpAtt.IsEnded)
+                                    {
+                                        <li><a asp-action="EndWork" asp-controller="Request">End Work</a></li>
+
+                                    }
+                                    else if (!RequestController.EmpAtt.IsEnded && !RequestController.EmpAtt.IsStarted)
+                                    {
+                                        <li><a asp-action="StartWork" asp-controller="Request">Start Work</a></li>
+                                        <li><a asp-action="EndWork" asp-controller="Request">End Work</a></li>
+
+                                    }
+                                }
+                                <li><a asp-action="DisplayAttendance" asp-controller="Request">Attendance</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a asp-action="Contacts" asp-controller="AdminDashboard">
+                                <span class="las la-users"></span>
+                                contacts
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-action="GetTopReports" asp-controller="AdminDashboard">
+                                <span class="las la-file-alt"></span>
+                                Reports
+                            </a>
+                        </li>
+
+                        <li>
+                                <partial name="_MailIconPartial">
+                        </li>
+
+                        <li>
+                            <a asp-action="Logout" asp-controller="Account">
+                                <span class="las la-sign-out-alt" style="color: azure;"> </span>
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
+                }
+                else if (User.IsInRole("Employee"))
+                {
+                    <ul>
+                        <li>
+                            <a asp-action="GetTopUserTasks" asp-controller="UserDashboard">
+                                <span class="las la-check-circle"></span>
+                                Tasks
+                            </a>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="menu-head">
+                        <span> Applications </span>
+                    </div>
+                    <ul>
+                        <li class="dropdown">
+                            <span class="las la-exclamation-circle"></span>
+                            Request
+                            <ul class="dropdown-menu">
+                                <li><a asp-action="AddVacation" asp-controller="Request">Vacation</a></li>
+                                @if (!AttendanceRepo.GetAll().Any(a => a.Date == DateOnly.FromDateTime(DateTime.Now)))
+                                {
+                                    
+                                    @if (RequestController.EmpAtt.IsStarted && !RequestController.EmpAtt.IsEnded)
+                                    {
+                                        <li><a asp-action="EndWork" asp-controller="Request">End Work</a></li>
+
+                                    }
+                                    else if (!RequestController.EmpAtt.IsEnded && !RequestController.EmpAtt.IsStarted)
+                                    {   
+                                        <li><a asp-action="StartWork" asp-controller="Request">Start Work</a></li>
+                                        <li><a asp-action="EndWork" asp-controller="Request">End Work</a></li>
+
+                                    }
+                                }
+                            </ul>
+                        </li>
+
+                        <li>
+                            <partial name="_MailIconPartial">
+                        </li>
+
+                        <li>
+                            <a asp-action="Logout" asp-controller="Account">
+                                <span class="las la-sign-out-alt" style="color: azure;"> </span>
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
+                }
+                else if (User.IsInRole("Manager"))
+                {
+                    <ul>
+                        <li>
+                            <a asp-action="GetTopTasks" asp-controller="ManagerDashboard">
+                                <span class="las la-check-circle"></span>
+                                Tasks
+                            </a>
+                        </li>
+
+                        <li>
+                            <a asp-action="GetTopEmployees" asp-controller="ManagerDashboard">
+                                <span class="las la-users"></span>
+                                Employees
+                            </a>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="menu-head">
+                        <span> Applications </span>
+                    </div>
+                    <ul>
+                        <li class="dropdown">
+                            <span class="las la-exclamation-circle"></span>
+                            Request
+                            <ul class="dropdown-menu">
+                                <li><a asp-action="AddVacation" asp-controller="Request">Vacation</a></li>
+                                @if (!AttendanceRepo.GetAll().Any(a => a.Date == DateOnly.FromDateTime(DateTime.Now)))
+                                {
+
+                                    @if (RequestController.EmpAtt.IsStarted && !RequestController.EmpAtt.IsEnded)
+                                    {
+                                        <li><a asp-action="EndWork" asp-controller="Request">End Work</a></li>
+
+                                    }
+                                    else if (!RequestController.EmpAtt.IsEnded && !RequestController.EmpAtt.IsStarted)
+                                    {
+                                        <li><a asp-action="StartWork" asp-controller="Request">Start Work</a></li>
+                                        <li><a asp-action="EndWork" asp-controller="Request">End Work</a></li>
+
+                                    }
+                                }
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a asp-action="Contacts" asp-controller="ManagerDashboard">
+                                <span class="las la-users"></span>
+                                contacts
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-action="GetTopReports" asp-controller="AdminDashboard">
+                                <span class="las la-file-alt"></span>
+                                Reports
+                            </a>
+                        </li>
+
+                        <li>
+                            <partial name="_MailIconPartial">
+                        </li>
+                        <li>
+                            <a asp-action="Logout" asp-controller="Account">
+                                <span class="las la-sign-out-alt" style="color: azure;"> </span>
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <label for="sidebar-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+            </div>
+
+            <div class="header-icons">
+                @if (MailSeenRepo.GetUserUnseenMailsCount(UserId) == 0)
+                {
+                    <a asp-action="GetMails" asp-controller="UserDashboard">
+                        <span style="color:black" class="las la-envelope"></span>
+                    </a>
+                }
+                else
+                {
+
+                    <a asp-action="GetMails" asp-controller="UserDashboard">
+                        <div class="icon-container" style="display:inline">
+                            <span style="color:black;" class="las la-envelope"></span>
+                            <span class="MailBadge" style="top:-16px">@MailSeenRepo.GetUserUnseenMailsCount(UserId)</span>
+                        </div>
+                    </a>
+                }
+                <a style="color:black" asp-action="GetTopReports" asp-controller="AdminDashboard"><span class="las la-file-alt"></span></a>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="page-header">
+                <div>
+                    @if (User.IsInRole("Employee"))
+                    {
+                        <h1> Employee Dashboard</h1>
+                    }
+                    else if (User.IsInRole("Admin"))
+                    {
+                        <h1> Admin Dashboard</h1>
+                    }
+                    else if (User.IsInRole("Manager"))
+                    {
+                        <h1> Manager Dashboard</h1>
+                    }
+                    <small>Monitor Key Metrics. Check reporting and review insights</small>
+                    <div style="justify-content:center; text-align:center; color:Red" asp-validation-summary="All">
+                    </div>
+                </div>
+                <div class="header-actions">
+                 @RenderSection("AddButtons",false)
+                </div>
+            </div>
+
+            <div class="cards">
+
+                @RenderSection("Cards",false)
+            </div>
+
+            <div class="jobs-grid" >
+                @RenderSection("Chart" , false)
+                <div class="jobs">
+                @RenderBody()    
+                </div>
+             </div>
+
+
+
+
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <partial name="_ValidationScriptsPartial"></partial>
+    <script src="~/js/AddTask.js"></script>
+    <script>
+        window.onload = function () {
+            if (performance.navigation.type === 2) {
+                document.body.style.visibility = "hidden"; 
+                setTimeout(function () {
+                    location.replace(window.location.href);
+                }, 10); 
+            }
+        };
+    </script>
+
+
+   
+
+    @RenderSection("JS" , false)
+</body>
+</html>

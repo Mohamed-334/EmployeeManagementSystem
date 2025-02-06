@@ -1,0 +1,47 @@
+﻿@using System.Security.Claims;
+@using EmployeeManagementDatabase.Entities
+@using Repository.Interfaces
+@model Report
+@inject IEmployeeRepository EmpRepo
+@{
+    Layout = "_AddReportLayout";
+    var UserId = User.Claims.First(e => e.Type == ClaimTypes.NameIdentifier).Value;
+    var emp = EmpRepo.GetById(UserId);
+    SelectList Managers = new SelectList(EmpRepo.GetManagers(),"Id","FullName");
+    SelectList EmployeesOfManager = new SelectList(EmpRepo.GetAll().Where(e => e.ManagerId == UserId), "Id", "FullName");
+}
+
+<h2>Reports</h2>
+<div class="reports-container">
+    <div class="reports-form">
+        <h3>Send us a message</h3>
+        <form asp-action="AddReport" asp-controller="AdminDashboard" method="post">
+            <input name="UserName" type="text" placeholder="UserName" value="@User.Identity.Name">
+            <input asp-for="ReportHeader" type="text" placeholder="Report Header" required>
+            <span style="color:red" asp-validation-for="ReportHeader"></span>
+            <textarea asp-for="ReportBody" placeholder="Your Message" rows="4" required></textarea>
+            <span style="color:red" asp-validation-for="ReportBody"></span>
+            @if (User.IsInRole("Admin"))
+            {
+                <label for="assignEmployee">Add to Manager:</label>
+                <select asp-for="ToEmployeeId" asp-items="Managers">
+                    <option value="0" disabled selected>Select an Manager</option>
+                </select>
+            }
+            else if (User.IsInRole("Manager"))
+            {
+                <label for="assignEmployee">Add to Employee:</label>
+                <select asp-for="ToEmployeeId" asp-items="EmployeesOfManager">
+                    <option value="0" disabled selected>Select an employee</option>
+                </select>
+            }
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <div class="reports-info">
+        <h3>Reports Information</h3>
+        <p><i class="fas fa-phone"></i>@emp.PhoneNumber</p>
+        <p><i class="fas fa-envelope"></i> @emp.Email</p>
+        <p><i class="fas fa-map-marker-alt"></i> @emp.Address</p>
+    </div>
+   </div>

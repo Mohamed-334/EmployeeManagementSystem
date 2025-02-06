@@ -1,0 +1,241 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EmployeeManagementSystem
+build_property.RootNamespace = EmployeeManagementSystem
+build_property.ProjectDir = D:\Programming section\Projects\WebSites\Employee Management System\EmployeeManagement\EmployeeManagementSystem\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Programming section\Projects\WebSites\Employee Management System\EmployeeManagement\EmployeeManagementSystem
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/AdminDashboard/AddDepartment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcQWRkRGVwYXJ0bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/AdminDashboard/AddPosition.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcQWRkUG9zaXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/AdminDashboard/AddReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcQWRkUmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/AdminDashboard/AdminDashboardMain.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcQWRtaW5EYXNoYm9hcmRNYWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/AdminDashboard/AllEmployees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcQWxsRW1wbG95ZWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/AdminDashboard/AllReports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcQWxsUmVwb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/AdminDashboard/AllTasks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcQWxsVGFza3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/AdminDashboard/Contacts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcQ29udGFjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/AdminDashboard/Employees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcRW1wbG95ZWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/AdminDashboard/GetAllContacts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcR2V0QWxsQ29udGFjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/AdminDashboard/Reports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcUmVwb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/AdminDashboard/ShowReportInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcU2hvd1JlcG9ydEluZm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/ManagerDashboard/Contacts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlckRhc2hib2FyZFxDb250YWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/ManagerDashboard/GetAllContacts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlckRhc2hib2FyZFxHZXRBbGxDb250YWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/ManagerDashboard/GetAllEmployees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlckRhc2hib2FyZFxHZXRBbGxFbXBsb3llZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/ManagerDashboard/GetAllTasks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlckRhc2hib2FyZFxHZXRBbGxUYXNrcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/ManagerDashboard/GetTopEmployees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlckRhc2hib2FyZFxHZXRUb3BFbXBsb3llZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/ManagerDashboard/GetTopTasks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlckRhc2hib2FyZFxHZXRUb3BUYXNrcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Request/AddVacation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFxBZGRWYWNhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Request/DisplayAttendance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFxEaXNwbGF5QXR0ZW5kYW5jZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_AddReportLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZGRSZXBvcnRMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_AddTaskPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZGRUYXNrUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_AttendanceLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BdHRlbmRhbmNlTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_CheckingButtonPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DaGVja2luZ0J1dHRvblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_CompleteButtonPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db21wbGV0ZUJ1dHRvblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_EmployeeCardPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FbXBsb3llZUNhcmRQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_EmployeeChartPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FbXBsb3llZUNoYXJ0UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_LoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_MailIconPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYWlsSWNvblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_NotificationIconPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb25JY29uUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_RegisterLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZWdpc3RlckxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_RejectTaskPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZWplY3RUYXNrUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_ReportCardPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZXBvcnRDYXJkUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_ReportChartPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZXBvcnRDaGFydFBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_TaskCardPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UYXNrQ2FyZFBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_TaskChartPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UYXNrQ2hhcnRQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_TaskFinishPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UYXNrRmluaXNoUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_TaskInfoPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UYXNrSW5mb1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_UserDashboardLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyRGFzaGJvYXJkTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_VacationLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWNhdGlvbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/UserDashboard/GetAllUserTasks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhc2hib2FyZFxHZXRBbGxVc2VyVGFza3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/UserDashboard/GetMailInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhc2hib2FyZFxHZXRNYWlsSW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/UserDashboard/GetMails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhc2hib2FyZFxHZXRNYWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/UserDashboard/GetTopUserTasks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhc2hib2FyZFxHZXRUb3BVc2VyVGFza3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/UserDashboard/Notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhc2hib2FyZFxOb3RpZmljYXRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/UserDashboard/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhc2hib2FyZFxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming section/Projects/WebSites/Employee Management System/EmployeeManagement/EmployeeManagementSystem/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-99m38ankfr

@@ -1,0 +1,56 @@
+﻿@using EmployeeManagementDatabase.Entities
+@using EmployeeManagementDatabase.Enums
+@using Repository.Interfaces
+@inject IJobRepository JobRepo
+@model Job
+
+<div class="card-single">
+    <div class="card-flex">
+        <div class="card-info">
+            <div class="card-head">
+                <span>Total Tasks</span>
+                <small>The Number of Total Tasks:</small>
+            </div>
+            <h2>@JobRepo.GetTotalRecordsNumber() Task</h2>
+        </div>
+        <div class="card-chart success">
+            <span class="las la-chart-line"></span>
+        </div>
+    </div>
+</div>
+
+<div class="card-single">
+    <div class="card-flex">
+        <div class="card-info">
+            <div class="card-head">
+                <span>Task Completed </span>
+                <small>Number of Completed Task </small>
+            </div>
+            <h2>@JobRepo.GetTotalCompletedTasks() Task</h2>
+            
+        </div>
+        <div class="card-chart yellow">
+            <span class="las la-chart-line"></span>
+        </div>
+    </div>
+</div>
+
+<div class="card-single">
+    <div class="card-flex">
+        <div class="card-info">
+            <div class="card-head">
+                <span>Not Completed Task</span>
+                <small>Number of Tasks That Haven't Completed </small>
+            </div>
+
+            <h2>@JobRepo.GetAll().Where(x => x.State != TaskState.Accepted).Count() Task</h2>
+        </div>
+        <div class="card-chart success">
+            <span class="las la-chart-line"></span>
+        </div>
+        @* <div class="card-chart yellow">
+            <span class="las la-chart-line"></span>
+        </div>
+        *@
+    </div>
+</div>

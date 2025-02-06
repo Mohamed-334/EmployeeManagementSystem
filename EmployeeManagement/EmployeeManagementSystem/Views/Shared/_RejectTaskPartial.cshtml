@@ -1,0 +1,14 @@
+﻿@using EmployeeManagementDatabase.Entities
+@model Report
+<div id="formModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Rejection Reasons</h3>
+
+        <label>Rejection Reasons :</label>
+        <form>
+            <input name="RejectionReasons" type="text" id="taskName" placeholder="Enter The Rejection Reasons">
+            <button asp-action="RejectedTask" asp-controller="ManagerDashboard" asp-route-TaskId="@Model.TaskId" asp-route-MailId="@Model.Id" asp-route-EmpId="@Model.FromEmployeeId" type="submit">Send Report</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,80 @@
+﻿@using EmployeeManagementDatabase.Entities
+@using EmployeeManagementDatabase.Enums;
+@using System.Security.Claims
+@using Repository.Interfaces
+@inject IJobRepository JobRepo
+@inject IEmployeeRepository EmpRepo
+@model Report
+@{
+    Layout = "_AddReportLayout";
+    var UserId = User.Claims.First(c => c.Type == ClaimTypes.NameIdentifier).Value;
+    var emp = EmpRepo.GetById(UserId);
+    var Report = Model;
+    Job? task = null;
+    if (Model is not null && Model.TaskId is not null)
+    {
+        task = JobRepo.GetById((int)Model.TaskId);
+    }
+}
+@section CSS{
+        <link rel="stylesheet" href="~/css/Mails.css">
+        <link rel="stylesheet" href="~/css/AddTask.css">
+}
+
+<div class="container">
+    <h1>Email Details</h1>
+    <div class="detail">
+        <strong>From:</strong> <span>@Model.FromEmployee.Email</span>
+    </div>
+    <div class="detail">
+        @if (Model.ToEmployeeId is null)
+        {
+            <strong>To:</strong><span>@emp.Email</span>
+        }
+        else
+        {
+
+            <strong>To:</strong> <span>@Model.ToEmployee.Email</span>
+        }
+    </div>
+    <div class="detail">
+        <strong>Subject:</strong> <span>@Model.ReportHeader</span>
+    </div>
+    <div style="margin:  40px" >
+        <p>@Model.ReportBody</p>
+    </div>
+    @if(task is not null)
+    {
+        @if (User.IsInRole("Manager") && Model.TaskId is not null && task.State == TaskState.Checking)
+        {
+            <div class="button-container">
+                <button onclick="window.location.href='@task.TaskLink'" style="background:blue" class="Accept">Task Link</button>
+                <form style="display:inline">
+                    <button asp-action="AcceptedTask" asp-route-TaskId="@Model.TaskId" asp-route-MailId="@Model.Id"  asp-controller="ManagerDashboard" type="submit" class="Accept">Accept</button>
+                    <button onclick="ButtonPreventDefault()" id="openForm" class="Reject" style="background-color: Red;padding: .7rem;">Reject</button>
+                    <partial name="_RejectTaskPartial" model="@Report" /> 
+                </form>
+
+            </div>
+        }
+        else if (User.IsInRole("Manager")  && task.State == TaskState.Rejected)
+        {
+
+            <div class="button-container">
+                <button onclick="window.location.href='@task.TaskLink'" style="background:blue" class="Accept">Task Link</button>
+                <button class='Reject' style='background-color: Red;cursor:default;'>Rejected</button>
+            </div>
+        }
+        else if (User.IsInRole("Manager") &&  task.State == TaskState.Accepted)
+        {
+            <div class="button-container">
+                <button onclick="window.location.href='@task.TaskLink'" style="background:blue" class="Accept">Task Link</button>
+                <button class='Accept' style="cursor:default;">Accepted</button>
+            </div>
+        }
+    }
+</div>
+
+@section JS{
+    <script src="~/js/RejectionReasons.js"></script>
+}

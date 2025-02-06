@@ -1,0 +1,103 @@
+﻿@using System.Security.Claims;
+@using EmployeeManagementSystem.Models.DTO;
+@using Repository.Interfaces
+@model ProfileDTO
+@inject IEmployeeRepository EmpRepo
+@{
+    Layout = "_AddReportLayout";
+    var UserId = User.Claims.First(e => e.Type == ClaimTypes.NameIdentifier).Value;
+
+}
+@section CSS{
+    <style>
+
+            form {
+                width : 85%;
+                justify-content:center;
+                margin: auto;
+                text-align: center;
+            }
+            #clickableImage {
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                cursor: pointer;
+                display:flex;
+                margin:auto;
+                margin-bottom:30px;
+            }
+
+
+    </style>
+}
+@if (User.IsInRole("Employee"))
+{
+    <h2>Employee Profile</h2>
+}
+else if (User.IsInRole("Admin"))
+{
+    <h2>Admin Profile</h2>
+}
+else if (User.IsInRole("Manager"))
+{
+    <h2>Manager Profile</h2>
+}
+
+<div class="reports-container">
+    <div class="reports-form" style="margin:auto">
+        <form asp-action="EditProfile" asp-route-Id="@UserId" asp-controller="UserDashboard" method="post" enctype="multipart/form-data">
+                    <img id="clickableImage" src="@Url.Action("GetImage" ,"AdminDashboard",new{id =UserId})" alt="user_icon">
+            <input asp-for="ProfilePhoto" type="file" id="fileInput" style="display: none;" accept="image/*">
+                <span asp-validation-for="ProfilePhoto" style="color:red"></span>
+
+           <div class="Field">
+                <label asp-for="FirstName"> First Name : </label>
+                <input asp-for="FirstName" type="text" placeholder="First Name">
+                <span style="color:red" asp-validation-for="FirstName"></span>
+           </div>
+
+            <div class="Field">
+
+                <label asp-for="LastName"> Last Name : </label>
+                <input asp-for="LastName" type="text" placeholder="Last Name">
+                <span style="color:red" asp-validation-for="LastName"></span>
+           </div>
+
+            <div class="Field">
+
+                <label asp-for="UserName"> UserName : </label>
+                <input asp-for="UserName" type="text" placeholder="UserName" required>
+                <span style="color:red" asp-validation-for="UserName"></span>
+           </div>
+
+
+            <div class="Field">
+
+                <label asp-for="Email"> Email : </label>
+                <input asp-for="Email" type="text" placeholder="Email" required>
+                <span style="color:red" asp-validation-for="Email"></span>
+           </div>
+
+            <div class="Field">
+
+                <label asp-for="PhoneNumber"> Phone Number :</label>
+                <input asp-for="PhoneNumber" type="text" placeholder="PhoneNumber" required>
+                <span style="color:red" asp-validation-for="PhoneNumber"></span>
+           </div>
+
+            <div class="Field">
+
+                <label asp-for="Address"> Address :</label>
+                <input asp-for="Address" type="text" placeholder="Address" required>
+                <span style="color:red" asp-validation-for="Address"></span>
+           </div>
+          
+
+            <button type="submit">Update Profile</button>
+        </form>
+    </div>
+
+</div>
+@section JS{
+    <script src="~/js/Register.js"></script>
+}

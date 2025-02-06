@@ -1,0 +1,244 @@
+﻿@using EmployeeManagementSystemWebSite.Models
+@using Repositories.Interfaces;
+@using Repository.Interfaces
+@model RegisterViewModel
+@inject IDepartmentRepository DeptRepo
+@inject IPositionRepository PositionRepo
+@inject IEmployeeRepository EmpRepo
+@{
+    Layout = "_RegisterLayout";
+    SelectList Managers = new SelectList(EmpRepo.GetManagers(), "Id", "FullName");
+}
+<div class="login-container" id="login">
+
+    <form asp-action="Register" asp-controller="Account" method="post" enctype="multipart/form-data">
+        <div class="header-img">
+        <img id="clickableImage" src="~/img/icon_user.png" alt="user_icon">
+        <input asp-for="Picture" type="file" id="fileInput" style="display: none;" accept="image/*">
+        <span asp-validation-for="Picture" style="color:red"></span>
+        </div>
+    <div class="two-forms">
+    
+        <div class="input-box">
+            <input asp-for="FirstName" type="text" class="input-field" placeholder="Firstname">
+            <i class="bx bx-user"></i>
+                <span asp-validation-for="FirstName" style="color:red"></span>
+
+        </div>
+        <div class="input-box">
+            <input asp-for="LastName" type="text" class="input-field" placeholder="Lastname">
+            <i class="bx bx-user"></i>
+                <span asp-validation-for="LastName" style="color:red"></span>
+
+        </div>
+    </div>
+        <div class="input-box">
+            <input asp-for="Username" type="text" class="input-field" placeholder="Username">
+            <i class="bx bx-user"></i>
+            <span asp-validation-for="Username" style="color:red"></span>
+
+        </div>
+        <div class="two-forms">
+        
+            <div class="input-box">
+                <input asp-for="Email" type="email" class="input-field" placeholder="Email">
+                <i class="bx bx-user"></i>
+                <span asp-validation-for="Email" style="color:red"></span>
+
+            </div>
+            <div class="input-box">
+                <input asp-for="PhoneNumber" type="text" class="input-field" placeholder="Phone Number">
+                <i class="bx bx-user"></i>
+                <span asp-validation-for="PhoneNumber" style="color:red"></span>
+
+            </div>
+        </div>
+
+        
+        <div class="input-box">
+            <input asp-for="Address" type="text" class="input-field" placeholder="Address">
+            <i class="bx bx-user"></i>
+            <span asp-validation-for="Address" style="color:red"></span>
+
+        </div>
+        
+        <div class="two-forms">
+            <div class="input-box">
+                <input asp-for="Password" type="password" class="input-field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+                <span asp-validation-for="Password" style="color:red"></span>
+
+            </div>
+
+            <div class="input-box">
+                <input asp-for="ConfirmPassword" type="password" class="input-field" placeholder="Confirm Password">
+                <i class="bx bx-lock-alt"></i>
+                <span asp-validation-for="ConfirmPassword" style="color:red"></span>
+
+            </div>
+        </div>
+        
+        <div class="input-box">
+            <input asp-for="Role" type="radio" class="radio-field" value="Employee" id="Employee" onclick="GetEmployeeDepartment()">
+            <label for="employee_AddUser">Employee</label>
+            <input asp-for="Role" type="radio" class="radio-field" value="Manager" id="Manager" onclick="GetManagerDepartment()">
+            <label asp-for="Role">Manager</label>
+            <input asp-for="Role" type="radio" class="radio-field" value="Admin" id="Admin" onclick="GetAdminDepartment()">
+            <label asp-for="Role">Admin</label>
+
+            <span asp-validation-for="Role" style="color:red"></span>
+
+        </div>
+        <div class="two-forms">
+            <div class="input-box">
+                <select asp-for="DepartmentId" id="Dept" onchange="GetPositions()" class="input-field" >
+                    <option value="0" selected disabled>Select Department</option>
+                </select>
+
+                <i class="bx bx-lock-alt"></i>
+                <span asp-validation-for="DepartmentId" style="color:red"></span>
+
+            </div>
+
+            <div class="input-box">
+                <select asp-for="PositionId" id="positions" class="input-field" >
+
+                    <option value="0" selected disabled>Select Position</option>
+                </select>
+
+                <i class="bx bx-lock-alt"></i>
+                <span asp-validation-for="PositionId" style="color:red"></span>
+
+            </div>
+        </div>
+        <div class="input-box" id="Managers">
+            <select asp-for="ManagerId" id="managers" asp-items="Managers" class="input-field">
+        
+                <option value="0" selected disabled>Select Manager</option>
+            </select>
+        
+            <i class="bx bx-lock-alt"></i>
+            <span asp-validation-for="ManagerId" style="color:red"></span>
+        </div>
+            
+        
+        <div class="input-box">
+            <input type="submit" class="submit" value="Sign In">
+        </div>
+    
+        </form>
+</div>
+
+@section JS{
+    <script>
+
+        function GetEmployeeDepartment() {
+            var EmpRole = document.getElementById("Employee").value;
+            console.log(EmpRole);
+            $.ajax({
+                url: "/Account/GetDepartments",
+                data: {
+                    "Role": EmpRole,
+                },
+                success: function (result) {
+                    document.getElementById("Dept").innerHTML = "";
+                    document.getElementById("Dept").innerHTML = " <option  selected disabled>Select Department</option>";
+                    for (let dept of result) {
+                        document.getElementById("Dept").innerHTML +=
+                            "<option value='" + dept.id + "'>" + dept.departmentName + "</option>";
+
+                    }
+                }
+            })
+        }
+
+        function GetManagerDepartment() {
+            var ManagerRole = document.getElementById("Manager").value;
+            console.log(ManagerRole);
+            $.ajax({
+                url: "/Account/GetDepartments",
+                data: {
+                    "Role": ManagerRole,
+                },
+                success: function (result) {
+                    console.log(result)
+                    document.getElementById("Dept").innerHTML = "";
+                    document.getElementById("Dept").innerHTML = " <option  selected disabled>Select Department</option>";
+                    for (let dept of result) {
+                        document.getElementById("Dept").innerHTML +=
+                            "<option value='" + dept.id + "'>" + dept.departmentName + "</option>";
+
+                    }
+                }
+            })
+        }
+
+        function GetAdminDepartment() {
+            var AdminRole = document.getElementById("Admin").value;
+            console.log(AdminRole);
+            $.ajax({
+                url: "/Account/GetDepartments",
+                data: {
+                    "Role": AdminRole,
+                },
+                success: function (result) {
+                    console.log(result)
+                    document.getElementById("Dept").innerHTML = "";
+                    document.getElementById("Dept").innerHTML = " <option  selected disabled>ٍSelect Department</option>";
+                    for (let dept of result) {
+                        document.getElementById("Dept").innerHTML +=
+                            "<option value='" + dept.id + "'>" + dept.departmentName + "</option>";
+
+                    }
+                }
+            })
+        }
+
+        function GetPositions() {
+            var id = document.getElementById("Dept").value;
+            console.log(id);
+            $.ajax({
+                url: "/Account/GetPosition",
+                data: {
+                    "DeptId" : id,
+                },
+                success: function (result) {
+                    console.log(result)
+                    document.getElementById("positions").innerHTML = "";
+                    document.getElementById("positions").innerHTML += "<option  selected disabled>Select Position</option>";
+                    for (let position of result) {
+                        document.getElementById("positions").innerHTML +=
+                            "<option value='" + position.id + "'>" + position.positionName + "</option>";
+
+                    }
+                }
+            })
+        }
+
+
+    </script>
+    <script>
+        const Managers = document.getElementById("Managers");
+        const employeeRadio = document.getElementById("Employee");
+        const adminRadio = document.getElementById("Admin");
+        const managerRadio = document.getElementById("Manager");
+
+        employeeRadio.addEventListener("change", function () {
+            if (this.checked) {
+                Managers.classList.add("show");
+            }
+        });
+
+        adminRadio.addEventListener("change", function () {
+            if (this.checked) {
+                Managers.classList.remove("show");
+            }
+        });
+        managerRadio.addEventListener("change", function () {
+            if (this.checked) {
+                Managers.classList.remove("show");
+            }
+        });
+
+    </script>
+}

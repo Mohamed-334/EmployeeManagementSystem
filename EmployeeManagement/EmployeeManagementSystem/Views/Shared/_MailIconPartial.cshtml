@@ -1,0 +1,24 @@
+﻿@using Repositories.Interfaces
+@using System.Security.Claims
+@inject IMailSeenRepository MailSeenRepo
+@{
+    var UserId = User.Claims.First(c => c.Type == ClaimTypes.NameIdentifier).Value;
+}
+@if (MailSeenRepo.GetUserUnseenMailsCount(UserId) == 0)
+{
+    <a asp-action="GetMails" asp-controller="UserDashboard">
+        <span class="las la-envelope"></span>
+        MailBox
+    </a>
+}
+else
+{
+        
+    <a asp-action="GetMails" asp-controller="UserDashboard">
+        <div class="icon-container" style="display:inline">
+            <span style="color:#efefef;" class="las la-envelope"></span>
+            <span class="MailBadge">@MailSeenRepo.GetUserUnseenMailsCount(UserId)</span>
+        </div>
+        MailBox
+    </a>
+}

@@ -1,0 +1,19 @@
+﻿@using Repositories.Interfaces
+@using System.Security.Claims
+@inject INotificationSeenRepository UserNotifyRepo
+@{
+    var UserId = User.Claims.First(c => c.Type == ClaimTypes.NameIdentifier).Value;
+}
+@if (UserNotifyRepo.GetUserUnseenNotificationsCount(UserId) == 0)
+{
+    <a style="color:white" asp-action="Notifications" asp-controller="UserDashboard"><span class="las la-bell"></span></a>
+}
+else
+{
+    <a style="color:white" asp-action="Notifications" asp-controller="UserDashboard">
+        <span class="las la-bell"></span>
+        <span class="badge">
+            @UserNotifyRepo.GetUserUnseenNotificationsCount(UserId)
+        </span>
+    </a>
+}

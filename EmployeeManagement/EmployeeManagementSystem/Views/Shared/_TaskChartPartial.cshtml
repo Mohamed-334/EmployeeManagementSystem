@@ -1,0 +1,28 @@
+﻿@using Repository.Interfaces
+@inject IJobRepository JobRepo
+
+<div class="analytics-card" id="analytics-card">
+    <div class="analytics-head">
+        <h3>Completed Task Percentage</h3>
+        <span class="las la-ellipsis-h"></span>
+    </div>
+
+    <div class="analytics-chart">
+            <div class="chart-circle" style="--percentage: @JobRepo.GetCompletedTaskPercentage()">
+                <div class="chart-text">
+                    <h1>@JobRepo.GetCompletedTaskPercentage()%</h1>
+                </div>
+            </div>
+
+        <div class="analytics-note">
+            <small>
+                Note: This represents the completed tasks percentage.
+            </small>
+        </div>
+    </div>
+    <div class="analytics-btn">
+        <form method="get">
+            <button asp-action="AddReport" asp-controller="AdminDashboard">GENERATE REPORT</button>
+        </form>
+    </div>
+</div>

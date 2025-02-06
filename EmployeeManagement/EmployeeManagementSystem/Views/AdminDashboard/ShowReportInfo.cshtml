@@ -1,0 +1,23 @@
+﻿@using EmployeeManagementDatabase.Entities
+@model Report
+<div class="analytics-head" style="display:block">
+    <h2> Report Title:
+
+    </h2>
+
+    <p style="text-align:center; font-size:larger"  > @Model.ReportHeader</p>
+    </div>
+
+    <div>
+        <div class="analytics-note">
+        <h2>Report Subject :</h2>
+        <p style="display:flex">
+            @Model.ReportBody
+        </p>
+        </div>
+        <div>
+            <h2>Created At :</h2>
+        <h6 style="font-size:larger; text-align:right">@Model.SendAt.ToString("dd/MM/yyyy")</h6>
+        </div>
+
+    </div>

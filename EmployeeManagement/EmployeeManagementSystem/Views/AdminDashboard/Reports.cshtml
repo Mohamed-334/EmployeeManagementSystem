@@ -1,0 +1,77 @@
+﻿@using System.Security.Claims;
+@using Repository.Interfaces
+@inject IReportRepository ReportRepo
+@{
+    Layout = "_UserDashboardLayout";
+}
+@section Cards{
+    <Partial name="_ReportCardPartial"></Partial>
+}
+@section Chart{
+    <Partial name="_ReportChartPartial"></Partial>
+
+}
+<h3>Reports <small> <a asp-action="GetAllReports" asp-controller="AdminDashboard"> See all Reports </a> <span class="las la-arrow-right"></span></small></h3>
+<table width="100%">
+    <tbody>
+        <tr>
+            <td>
+                <div>
+                    <span class="indicator"></span>
+                </div>
+            </td>
+            <td><div>Employee Name</div></td>
+            <td><div>Send At</div></td>
+            <td><div style="padding-left: .8rem;">Report Title</div></td>
+            <td><div></div></td>
+            <td><div>
+                    <form asp-action="AddReport" asp-controller="AdminDashboard" method="get">
+                        <button button style="padding: .7rem;">Add Report</button>
+                    </form>
+                </div> 
+            </td>
+        </tr>
+
+        @foreach (var item in ReportRepo.GetByForeignKey(r => r.FromEmployeeId == User.Claims.FirstOrDefault(e => e.Type == ClaimTypes.NameIdentifier).Value).Take(5).OrderBy(e => e.SendAt))
+        {
+            
+            <tr>
+                <td>
+                    <div>
+                        <span class="indicator even"></span>
+                    </div>
+                </td>
+                <td><div>@item.ToEmployee.UserName</div></td>
+                <td><div>@item.SendAt.ToString("yyyy/MM/dd")</div></td>
+                <td><div>@item.ReportHeader</div></td>
+                <td><div><input id="ReportId" value="@item.Id" hidden/></div></td>
+                <td><div><button onclick="GetReportInfo(@item.Id)">Show details</button></div> </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section JS{
+    <script>
+        function GetReportInfo(ReportId) {
+
+            console.log(ReportId);
+            $.ajax(
+                {
+                    url: "/AdminDashboard/ShowReportInfo/",
+                    data:
+                    {
+                        "Id": ReportId,
+                    },
+                    success: function (result) {
+                        console.log(result);
+                        document.getElementById("analytics-card").innerHTML = result;
+
+                    }
+                }
+            )
+        }
+    </script>
+}
+
+
+

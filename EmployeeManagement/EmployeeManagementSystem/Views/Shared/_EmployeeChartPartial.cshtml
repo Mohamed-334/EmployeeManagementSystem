@@ -1,0 +1,27 @@
+﻿@using Repository.Interfaces
+@inject IEmployeeRepository EmpRepo
+<div class="analytics-card" id="analytics-card">
+    <div class="analytics-head">
+        <h3>Employees Without Department</h3>
+        <span class="las la-ellipsis-h"></span>
+    </div>
+
+    <div class="analytics-chart">
+        <div class="chart-circle" style="--percentage: @EmpRepo.GetEmployeesNotAssignedToDepartment()">
+            <div class="chart-text">
+                <h1>@EmpRepo.GetEmployeesNotAssignedToDepartment()%</h1>
+            </div>
+        </div>
+
+        <div class="analytics-note">
+            <small>
+                Note: The Percentage of People that Not Assigned to Department
+            </small>
+        </div>
+    </div>
+    <div class="analytics-btn">
+        <form method="get">
+            <button asp-action="AddReport" asp-controller="AdminDashboard">GENERATE REPORT</button>
+        </form>
+    </div>
+</div>

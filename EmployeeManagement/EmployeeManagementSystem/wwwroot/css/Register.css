@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url("/img/img1.jpeg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    min-height: 110vh;
+    background: rgba(39, 39, 39, 0.4);
+}
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    z-index: 100;
+}
+.nav-logo p{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+.quote {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    padding: 0 20px;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.form-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+    height: 300px;
+    overflow: visible;
+    z-index: 2;
+}
+.two-forms{
+    
+    display: flex;
+    gap: 10px;
+}
+.header-img{
+    position: absolute;
+    top: -128px;
+    left: 40%;
+    transition: 0.5s ease;  
+}
+.header-img:hover{
+    box-shadow:1px 5px 7px 1px rgba(0, 0, 0, 0.5) ;
+    border-radius: 70%;
+}
+.header-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.login-container{
+    position: absolute;
+    left: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .6s ease-in-out;
+}
+.input-field{
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+}
+.input-field:hover, .input-field:focus{
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.radio-field{
+    color: #fff;
+    margin-left: 37px;
+    margin-bottom: 23px;
+    height: 24px;
+    width: 6%;
+    border: none;
+    transition: .2s ease;
+}
+#Managers {
+    flex: 1;
+    max-width: 0;
+    opacity: 0;
+    display: none;
+    transition: all 0.4s ease;
+}
+
+    #Managers.show {
+        max-width: 500px;
+        opacity: 1;
+        display: block;
+    }
+label{
+    color: white;
+}
+
+option{
+    background-color: gray;
+    border-radius: 20px;
+}
+::-webkit-input-placeholder{
+    color: #fff;
+}
+.input-box i{
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: #fff;
+}
+.submit{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.submit:hover{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.two-col{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: small;
+    margin-top: 10px;
+}
+.two-col .one{
+    display: flex;
+    gap: 5px;
+}
+.two label a{
+    text-decoration: none;
+    color: #fff;
+}
+.two label a:hover{
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .nav {
+        height: 50px;
+        line-height: 50px;
+        padding: 0 10px;
+    }
+    .nav-logo p {
+        font-size: 18px;
+    }
+    .quote {
+        font-size: 16px;
+        margin: 10px;
+    }
+    .form-box {
+        max-width: 300px;
+        padding: 15px;
+    }
+    .input-field {
+        height: 40px;
+        font-size: 14px;
+    }
+    .submit {
+        height: 40px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    .quote {
+        font-size: 14px;
+        margin: 5px;
+    }
+    .form-box {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .input-field {
+        font-size: 12px;
+        padding-left: 40px;
+    }
+    .submit {
+        font-size: 12px;
+    }
+}

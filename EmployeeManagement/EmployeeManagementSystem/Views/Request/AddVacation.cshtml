@@ -1,0 +1,32 @@
+﻿@using EmployeeManagementDB.Entities
+@using EmployeeManagementDB.Enums
+@using EmployeeManagementDatabase.Enums;
+@using System.Security.Claims;
+@using Repositories.Interfaces;
+@using Repository.Interfaces
+@model Vacation
+@inject IEmployeeRepository EmpRepo
+@inject IVacationRepository VacationRepo
+@{
+    Layout = "_VacationLayout";
+    var UserId = User.Claims.First(id => id.Type == ClaimTypes.NameIdentifier).Value;
+    var Emp = EmpRepo.GetById(UserId);
+    var FullName = $"{Emp.FirstName} {Emp.LastName}";
+    var VacationTypes = VacationType.GetNames(typeof(VacationType)).ToList();
+    SelectList Vacations = new SelectList(VacationTypes);
+}
+<form asp-action="AddVacation" asp-controller="Request"  method="post">
+    <input asp-for="EmployeeId" type="hidden" value="@UserId">
+    <label for="employeeName">Employee Name</label>
+    <input  type="text" id="employeeName" required placeholder="Enter employee name" value="@FullName">
+
+    <label for="status">Vacation Type</label>
+    <select asp-for="VacationType" id="status" asp-items="Vacations" required>
+        <option value="0" selected disabled>Select type</option>
+    </select>
+    <span style="color:red" asp-validation-for="VacationType"></span>
+    
+
+    <button type="submit">Submit</button>
+</form>
+    

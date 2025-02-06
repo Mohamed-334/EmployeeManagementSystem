@@ -1,0 +1,52 @@
+﻿@using Repository.Interfaces
+@inject IEmployeeRepository EmpRepo
+
+<div class="card-single">
+    <div class="card-flex">
+        <div class="card-info">
+            <div class="card-head">
+                <span>Total Employees</span>
+                <small>The Number of Employees:</small>
+            </div>
+            <h2>@EmpRepo.GetTotalRecordsNumber() Employee</h2>
+        </div>
+        <div class="card-chart success">
+            <span class="las la-chart-line"></span>
+        </div>
+    </div>
+</div>
+
+<div class="card-single">
+    <div class="card-flex">
+        <div class="card-info">
+            <div class="card-head">
+                <span>Employees without Department</span>
+                <small>Number Employees Without Department </small>
+            </div>
+            <h2>@EmpRepo.GetAll().Where(x => x.Position == null).Count() Employee</h2>
+        </div>
+        <div class="card-chart yellow">
+            <span class="las la-chart-line"></span>
+        </div>
+    </div>
+</div>
+
+<div class="card-single">
+    <div class="card-flex">
+        <div class="card-info">
+            <div class="card-head">
+                <span>Employees with Department</span>
+                <small>Number Employees With Department </small>
+            </div>
+
+            <h2>@EmpRepo.GetAll().Where(x => x.Position != null).Count() Employee</h2>
+        </div>
+        <div class="card-chart success">
+            <span class="las la-chart-line"></span>
+        </div>
+        @* <div class="card-chart yellow">
+            <span class="las la-chart-line"></span>
+        </div>
+        *@
+    </div>
+</div>

@@ -1,0 +1,36 @@
+﻿@using EmployeeManagementDatabase.Entities
+@using Repositories.DTO
+@model IEnumerable<ReportDTO>
+@{
+    Layout = "_AddReportLayout";
+}
+@section CSS{
+        <link rel="stylesheet" href="~/css/Mailbox_media.css">
+        <link rel="stylesheet" href="~/css/Mailbox_style.css">
+
+}
+<main>
+    <div class="messages_area">
+        @foreach (var item in Model.OrderByDescending(e => e.Report.SendAt))
+        {
+            <a asp-action="GetMailInfo" asp-route-MailId="@item.Report.Id" asp-controller="UserDashboard">
+                <div class="messages">
+                    <div class="messages_left">
+                        <span>@item.Report.FromEmployee.FullName</span>
+                    </div>
+                    <div class="messages_content">
+                        @item.Report.ReportHeader
+                    </div>
+                    <div class="messages_date">@item.Report.SendAt.ToString("yyyy,MMM,dd")</div>
+                    @if (item.Seen)
+                    {
+                        <span class="las la-check text-warning fs-3" style="font-size:larger ;border-radius:50%"></span>
+                    }
+                </div>
+           </a>
+
+        }
+
+    </div>
+
+</main>

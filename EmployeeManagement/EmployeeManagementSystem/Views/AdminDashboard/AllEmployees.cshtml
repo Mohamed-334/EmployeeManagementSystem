@@ -1,0 +1,67 @@
+﻿@using Repository.Interfaces
+@inject IEmployeeRepository EmpRepo
+@{
+    Layout = "_UserDashboardLayout";
+}
+@section CSS {
+    <link rel="stylesheet" href="~/css/AddTask.css">
+}
+@section Cards{
+    <Partial name="_EmployeeCardPartial"></Partial>
+}
+@section Chart{
+    <Partial name="_EmployeeChartPartial"></Partial>
+}
+@section AddButtons{
+    <form>
+        <button asp-action="Register" asp-controller="Account"> 
+            <span class="las la-users"></span>
+            Add Account
+
+        </button>
+    </form>
+}
+<h3>Employees <small> <a asp-action="GetTopEmployees" asp-controller="AdminDashboard">Minimize employees</a> <span class="las la-arrow-right"></span></small></h3>
+<table width="100%">
+    <tbody>
+        <tr>
+            <td>
+                <div>
+                    <span class="indicator"></span>
+                </div>
+            </td>
+            <td><div>Employee Name</div></td>
+            <td><div>Email</div></td>
+            <td><div style="padding-left: 2rem;">Department</div></td>
+            <td><div>Position</div></td>
+            @* <td><div><button style="padding: .7rem;">Add</button></div> </td> *@
+        </tr>
+
+        @foreach (var item in EmpRepo.GetAll().OrderBy(e => e.FirstName))
+        {
+            <tr>
+                <td>
+                    <div>
+                        <span class="indicator even"></span>
+                    </div>
+                </td>
+                <td><div>@item.FirstName @item.LastName</div></td>
+                <td><div>@item.Email</div></td>
+                @if (item.Position is null)
+                {
+                    <td><div>Not Registered</div></td>
+                    <td><div>Not Registered</div></td>
+                }
+                else
+                {
+                    <td><div>@item.Position.Department.DepartmentName</div></td>
+                    <td><div>@item.Position.PositionName</div></td>
+                }
+
+            </tr>
+        }
+    </tbody>
+</table>
+@section JS{
+    <script src="~/js/AddTask.js"></script>
+}

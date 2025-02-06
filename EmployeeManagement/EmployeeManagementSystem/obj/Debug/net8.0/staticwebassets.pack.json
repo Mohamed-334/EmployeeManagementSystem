@@ -1,0 +1,373 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EmployeeManagementSystem.bundle.scp.css",
+      "PackagePath": "staticwebassets\\EmployeeManagementSystem.0n27is6tty.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\css\\AddAdmin.css",
+      "PackagePath": "staticwebassets\\css\\AddAdmin.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\css\\AddTask.css",
+      "PackagePath": "staticwebassets\\css\\AddTask.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\css\\AdminDash.css",
+      "PackagePath": "staticwebassets\\css\\AdminDash.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\css\\Mailbox_media.css",
+      "PackagePath": "staticwebassets\\css\\Mailbox_media.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\css\\Mailbox_style.css",
+      "PackagePath": "staticwebassets\\css\\Mailbox_style.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\css\\Mails.css",
+      "PackagePath": "staticwebassets\\css\\Mails.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\css\\Notification.css",
+      "PackagePath": "staticwebassets\\css\\Notification.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\css\\Register.css",
+      "PackagePath": "staticwebassets\\css\\Register.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\css\\Reports_style.css",
+      "PackagePath": "staticwebassets\\css\\Reports_style.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\css\\UserDash.css",
+      "PackagePath": "staticwebassets\\css\\UserDash.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\css\\attend.css",
+      "PackagePath": "staticwebassets\\css\\attend.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\img\\UserProfile.jpg",
+      "PackagePath": "staticwebassets\\img\\UserProfile.jpg"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\img\\icon_user.png",
+      "PackagePath": "staticwebassets\\img\\icon_user.png"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\img\\img1.jpeg",
+      "PackagePath": "staticwebassets\\img\\img1.jpeg"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\img\\profile.jpg",
+      "PackagePath": "staticwebassets\\img\\profile.jpg"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\js\\AddAdmin.js",
+      "PackagePath": "staticwebassets\\js\\AddAdmin.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\js\\AddTask.js",
+      "PackagePath": "staticwebassets\\js\\AddTask.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\js\\Register.js",
+      "PackagePath": "staticwebassets\\js\\Register.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\js\\RejectionReasons.js",
+      "PackagePath": "staticwebassets\\js\\RejectionReasons.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\js\\ReloadBack.js",
+      "PackagePath": "staticwebassets\\js\\ReloadBack.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\js\\attend.js",
+      "PackagePath": "staticwebassets\\js\\attend.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\js\\mailbox.js",
+      "PackagePath": "staticwebassets\\js\\mailbox.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EmployeeManagementSystem.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EmployeeManagementSystem.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.EmployeeManagementSystem.props",
+      "PackagePath": "build\\EmployeeManagementSystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.EmployeeManagementSystem.props",
+      "PackagePath": "buildMultiTargeting\\EmployeeManagementSystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.EmployeeManagementSystem.props",
+      "PackagePath": "buildTransitive\\EmployeeManagementSystem.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,166 @@
+﻿@using System.Security.Claims;
+@using EmployeeManagementDatabase.Enums;
+@using EmployeeManagementSystem.Models;
+@using Repository.Interfaces
+@inject IJobRepository JobRepo
+@model FinishTask
+@{
+    Layout = "_UserDashboardLayout";
+    var UserId = User.Claims.First(e => e.Type == ClaimTypes.NameIdentifier).Value;
+}
+@section Cards{
+    <partial name="_EmployeeCardPartial">
+        }
+@section Chart{
+<partial name="_EmployeeChartPartial">
+}
+@section CSS{
+            <link rel="stylesheet" href="~/css/AddTask.css">
+}
+        <h3>Tasks <small> <a asp-action="GetAllUserTasks" asp-controller="UserDashboard">See all tasks</a> <span class="las la-arrow-right"></span></small></h3>
+<table width="100%">
+    <tbody>
+
+        @foreach (var item in JobRepo.GetByForeignKey(j => j.EmployeeId == UserId).OrderByDescending(e => e.DeadLine).Take(5))
+        {
+                    <tr onclick="GetTaskInfo(@item.Id)">
+                        <td>
+                            <div>
+                                <span class="indicator even"></span>
+                            </div>
+                        </td>
+                        <td><div style="text-align: left;">@item.TaskName</div></td>
+                        <td><div style="text-align: left;"></div></td>
+                        <td><div style="padding-left: 2rem;">@item.DeadLine.ToString("yyyy/MM/dd")</div></td>
+                           @if (item.State == TaskState.Running)
+                           {
+                                       <td><div><button class="openForm" data-task-id="@item.Id" style="padding: .7rem;">Finish</button></div> </td>
+                           }
+                           else if (item.State == TaskState.Checking)
+                           {
+                                       <td><div><button class="checkingButton" style="padding: .7rem;">Checking</button></div> </td>
+                           }
+                           else if (item.State == TaskState.Rejected)
+                           {
+                            <td><div><button class="rejectedButton" data-task-id="@item.Id" style="padding: .7rem; background-color:#ff3b3b">Rejected</button></div> </td>
+                           }
+                           else
+                           {
+                            <td><div><button style="padding: .7rem;background-color:Green">Done</button></div> </td>
+                           }
+                    </tr>
+
+                    <div id="formModal_@item.Id" class="modal">
+                        <div class="modal-content">
+                            <span class="close" data-modal-id="formModal_@item.Id">&times;</span>
+                            <h3>Add a RepoLink</h3>
+                            <form asp-action="TaskTesting" asp-route-TaskId="@item.Id" asp-controller="UserDashboard" method="post">
+                                <label asp-for="RepoLink">RepoLink</label>
+                                <input asp-for="RepoLink" type="text" id="taskName" placeholder="Enter Repository Link" required>
+                                <span style="color:red" asp-validation-for="RepoLink"></span>
+                                <button type="submit">Deliver Task</button>
+                            </form>
+                        </div>
+                    </div>
+        }
+
+
+    </tbody>
+</table>
+@section JS{
+    <script>
+        function TaskCompleted(id) {
+            console.log(id);
+            $.ajax(
+                {
+                    url: "/UserDashboard/SetTaskDone/"+id,
+                    success: function (result) {
+                        console.log(result);
+                        document.getElementById("CompletedTask").innerHTML = result;
+                    }
+                }
+            )
+           
+        }
+        function TaskChecking(id) {
+            console.log(id);
+            $.ajax(
+                {
+                    url: "/ManagerDashboard/TaskTesting/"+id,
+                    success: function (result) {
+                        console.log(result);
+                                document.getElementById("openForm").innerHTML = result;
+                    }
+                }
+            )
+           
+        }
+        function GetTastInfo(TaskId) {
+            $.ajax(
+                {
+                    url: "/UserDashboard/GetTaskInfo",
+                    data: { "TaskId": TaskId  },
+                    success: function (result) {
+                        document.getElementById("analytics-card").innerHTML = "";
+                        document.getElementById("analytics-card").innerHTML = result;
+                    }
+                }
+            )
+
+        }
+
+
+    </script>
+    <script>
+                 document.addEventListener("DOMContentLoaded", function() {
+
+             const openFormButtons = document.querySelectorAll(".openForm");
+             const closeButtons = document.querySelectorAll(".close");
+             const pageContent = document.getElementById("FirstpageContent");
+
+
+             openFormButtons.forEach(button => {
+                 button.addEventListener("click", function(e) {
+                     const taskId = e.target.getAttribute("data-task-id");
+                     const formModal = document.getElementById("formModal_" + taskId); 
+                     if (formModal) {
+                         formModal.style.display = "flex";
+                         pageContent.classList.add("blurred");
+                     }
+                 });
+             });
+
+
+             const rejectedButtons = document.querySelectorAll(".rejectedButton");
+             rejectedButtons.forEach(button => {
+                 button.addEventListener("click", function(e) {
+                     const taskId = e.target.getAttribute("data-task-id");
+                     const formModal = document.getElementById("formModal_" + taskId); 
+                     if (formModal) { 
+                         formModal.style.display = "flex";
+                         pageContent.classList.add("blurred");
+                     }
+                 });
+             });
+
+             closeButtons.forEach(button => {
+                 button.addEventListener("click", function(e) {
+                     const modalId = e.target.getAttribute("data-modal-id");
+                     const formModal = document.getElementById(modalId);
+                     if (formModal) {
+                         formModal.style.display = "none";
+                         pageContent.classList.remove("blurred");
+                     }
+                 });
+             });
+
+             window.addEventListener("click", function(e) {
+                 if (e.target.classList.contains("modal")) {
+                     e.target.style.display = "none";
+                     pageContent.classList.remove("blurred");
+                 }
+             });
+         });
+
+    </script>
+}

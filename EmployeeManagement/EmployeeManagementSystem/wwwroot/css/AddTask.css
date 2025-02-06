@@ -1,0 +1,67 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 267px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+  .close {
+    float: right;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+  }
+  .close:hover {
+    color: darkred;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+.reports-form h3 input, textarea, select, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.modal input, textarea, select, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+  textarea {
+    resize: none;
+  }
+
+  button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  #pageContent.blurred {
+    filter: blur(5px);
+    pointer-events: none;
+  }

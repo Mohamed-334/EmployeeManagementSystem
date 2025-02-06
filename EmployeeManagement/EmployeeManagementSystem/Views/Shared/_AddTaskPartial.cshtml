@@ -1,0 +1,34 @@
+﻿@using System.Security.Claims;
+@using EmployeeManagementDatabase.Entities
+@using Repository.Interfaces
+@model Job
+@inject IEmployeeRepository EmpRepo
+@{
+    var UserId = User.Claims.First(e => e.Type == ClaimTypes.NameIdentifier).Value;
+    SelectList emps = new SelectList(EmpRepo.GetEmployees().Where(e => e.ManagerId == UserId), "Id", "FullName");
+}
+
+<form asp-action="AddTask" asp-controller="ManagerDashboard" method="post">
+
+    <label asp-for="TaskName">Task Name:</label>
+    <input asp-for="TaskName" type="text" id="taskName" placeholder="Enter the task name" required>
+    <span style="color:red" asp-validation-for="TaskName"></span>
+
+
+    <label asp-for="TaskDescription">Task Description:</label>
+    <textarea asp-for="TaskDescription" id="taskDescription" placeholder="Enter the task description" rows="4" required></textarea>
+    <span style="color:red" asp-validation-for="TaskDescription"></span>
+
+    <label for="deadline">Deadline:</label>
+    <input asp-for="DeadLine" type="date" id="deadline"  required>
+    <span style="color:red" asp-validation-for="DeadLine"></span>
+
+    <label for="assignEmployee">Assign to Employee:</label>
+    <select asp-for="EmployeeId" asp-items="emps">
+        <option value="0" disabled selected>Select an employee</option>
+    </select>
+    <span style="color:red" asp-validation-for="EmployeeId"></span>
+
+
+    <button type="submit">Add Task</button>
+</form>

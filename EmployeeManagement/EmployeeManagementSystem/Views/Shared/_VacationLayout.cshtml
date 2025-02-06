@@ -1,0 +1,84 @@
+﻿@using Repositories.Interfaces;
+@using System.Security.Claims;
+@inject IVacationRepository VacationRepo
+@{
+    var UserId = User.Claims.FirstOrDefault(id => id.Type == ClaimTypes.NameIdentifier).Value;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attendance</title>
+    <link rel="stylesheet" href="~/css/attend.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Employee Vacation</h1>
+        </header>
+
+        <div class="attendance-form">
+            <h2>Mark Vacation</h2>
+            @RenderBody()
+        </div>
+
+        <div class="attendance-list">
+            @if (User.IsInRole("Admin"))
+            {
+                <h2>Attendance Records</h2>
+                <table id="attendanceTable">
+                    <thead>
+                        <tr>
+                            <th>Employee Name</th>
+                            <th>Employee Type</th>
+                            <th>Vacation days</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in VacationRepo.GetAll())
+                        {
+                            <tr>
+                                <td>@item.Employee.FullName</td>
+                                <td>@item.VacationType.ToString()</td>
+                                <td>@((int)item.VacationType)</td>
+                                <td>@item.At.ToString("yyyy,MMM,dd")</td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <h2>Attendance Records</h2>
+                <table id="attendanceTable">
+                    <thead>
+                        <tr>
+                            <th>Employee Name</th>
+                            <th>Employee Type</th>
+                            <th>Vacation days</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in VacationRepo.GetByForeignKey(v => v.EmployeeId == UserId))
+                        {
+                            <tr>
+                                <td>@item.Employee.FullName</td>
+                                <td>@item.VacationType.ToString()</td>
+                                <td>@((int)item.VacationType)</td>
+                                <td>@item.At.ToString("yyyy,MMM,dd")</td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            }
+        </div>
+    </div>
+
+    <script src="~/js/attend.js"></script>
+</body>
+</html>

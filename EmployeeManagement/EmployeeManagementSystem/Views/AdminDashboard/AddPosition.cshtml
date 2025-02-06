@@ -1,0 +1,27 @@
+﻿@using EmployeeManagementSystem.Models
+@using Repositories.Interfaces
+@inject IDepartmentRepository DeptRepo
+@model PositionViewModel
+@{
+    Layout = "_RegisterLayout";
+    SelectList emps = new SelectList(DeptRepo.GetAll(), "Id", "DepartmentName");
+}
+<div class="login-container" id="login">
+    <form asp-action="AddPosition" asp-controller="AdminDashboard" method="post">
+        <div class="input-box">
+            <input asp-for="PositionName" type="text" class="input-field" placeholder="Position Name">
+            <i class="bx bx-user"></i>
+            <span style="color:red" asp-validation-for="PositionName"></span>
+        </div>
+        <div class="input-box">
+            <select class="input-field" asp-items="emps" asp-for="DepartmentId">
+                <option value="0" selected disabled>Select Department</option>
+            </select>
+            <i class="bx bx-lock-alt"></i>
+            <span style="color:red" asp-validation-for="DepartmentId"></span>
+        </div>
+        <div class="input-box">
+            <input type="submit" class="submit" value="Add Position">
+        </div>
+    </form>
+</div>

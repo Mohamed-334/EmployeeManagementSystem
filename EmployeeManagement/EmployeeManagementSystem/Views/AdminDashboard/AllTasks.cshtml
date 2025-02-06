@@ -1,0 +1,104 @@
+﻿@using EmployeeManagementDatabase.Entities
+@using EmployeeManagementDatabase.Enums;
+@using Repository.Interfaces
+@inject IJobRepository JobRepo
+@inject IEmployeeRepository EmpRepo
+@model Job
+@{
+    Layout = "_UserDashboardLayout";
+}
+@section Cards{
+        <Partial name="_TaskCardPartial"></Partial>
+}
+@section Chart{
+        <Partial name="_TaskChartPartial"></Partial>
+}
+@section AddButtons {
+    <form style="display:inline">
+        <button asp-action="AddDepartment" asp-controller="AdminDashboard">
+            <span class="las la-users"></span>
+            Add Department
+        </button>
+        <button asp-action="AddPosition" asp-controller="AdminDashboard">
+            <span class="las la-briefcase"></span>
+            Add Position
+        </button>
+    </form>
+}
+@section CSS {
+    <link rel="stylesheet" href="~/css/AddTask.css">
+}
+<h3>Tasks <small> <a asp-action="GetTopTasks" asp-controller="AdminDashboard">Minimize tasks</a> <span class="las la-arrow-right"></span></small></h3>
+<table width="100%">
+    <tbody>
+        <tr>
+            <td>
+                <div>
+                    <span class="indicator"></span>
+                </div>
+            </td>
+            <td><div>Employee Name</div></td>
+            <td><div>Position</div></td>
+            <td><div style="padding-left: 2rem;">Task</div></td>
+            <td><div>Due Date</div></td>
+            <td><div><button>Task State</button></div> </td>
+        </tr>
+
+        @foreach (var item in JobRepo.GetAll().OrderBy(e => e.Employee.FirstName))
+        {
+            <tr onclick="GetTastInfo(@item.Id)">
+                <td>
+                    <div>
+                        <span class="indicator even"></span>
+                    </div>
+                </td>
+                <td><div>@item.Employee.UserName</div></td>
+                @if (item.Employee.Position is null)
+                {
+
+                    <td><div>Not Registered</div></td>
+                }
+                else
+                {
+                    <td><div>@item.Employee.Position.PositionName</div></td>
+                }
+                <td><div>@item.TaskName</div></td>
+                <td><div>@item.DeadLine.ToString("yyyy/MM/dd")</div></td>
+                @if (item.State == TaskState.Accepted)
+                {
+                    <td><div><button>Completed</button></div> </td>
+                }
+                else if (item.State == TaskState.Checking)
+                {
+                    <td><div><button>Checking....</button></div> </td>
+                }
+                else if (item.State == TaskState.Rejected)
+                {
+                    
+                    <td><div><button>Rejected</button></div> </td>
+                }
+                else
+                {
+                    <td><div><button>Running.....</button></div> </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+@section JS{
+        <script>
+            function GetTastInfo(TaskId) {
+                $.ajax(
+                    {
+                        url: "/UserDashboard/GetTaskInfo",
+                        data: { "TaskId": TaskId },
+                        success: function (result) {
+                            document.getElementById("analytics-card").innerHTML = "";
+                            document.getElementById("analytics-card").innerHTML = result;
+                        }
+                    }
+                )
+
+            }
+    </script>
+}

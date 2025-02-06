@@ -1,0 +1,48 @@
+﻿@using Repositories.Interfaces;
+@inject IAttendanceRepository AttRepo
+
+@{
+    Layout = "_AttendanceLayout";
+}
+@if (User.IsInRole("Admin"))
+{
+    <h2>Attendance Records</h2>
+    <table id="attendanceTable">
+        <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Day</th>
+                <th>Date</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>State</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in AttRepo.GetAll())
+            {
+                <tr>
+                    <td>@item.Employee.FullName</td>
+                    <td>@item.Day</td>
+                    <td>@item.Date.ToString("yyyy,MMM.dd")</td>
+                    <td>@item.StartTime.ToString(@"hh\:mm")</td>
+                    <td>@item.EndTime.ToString(@"hh\:mm")</td>
+                    @if(item.State == "Attendant")
+                    {
+                        
+                        <td style="color:green;">@item.State</td>
+                    }
+                    else
+                    {
+                        <td style="color:red;">@item.State</td>
+
+                    }
+
+                </tr>
+            }
+
+        </tbody>
+    </table>
+}
+
+</div>

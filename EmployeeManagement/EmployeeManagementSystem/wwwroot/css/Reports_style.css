@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color-main: #la202e;
+}
+
+*{
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar-toggle{
+    display: none;
+}
+
+#sidebar-toggle:checked ~ .sidebar{
+    left: -100%;
+}
+
+#sidebar-toggle:checked ~ .main-content header{
+    left: 0;
+    width:100%;
+    right: 0;
+}
+
+#sidebar-toggle:checked ~ .main-content{
+    margin-left: 0;
+}
+
+.sidebar{
+    width: 280px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 1rem 1.5rem;
+    background-color:#010a35;
+    color: #fff;
+    transition: left 300ms;
+}
+
+.sidebar-brand{
+    height: 100px;
+}
+
+.brand-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-flex h3{
+    font-size: 23px;
+}
+
+.brand-icons span{
+    font-size:1.6rem;
+    margin-left: .5rem;
+}
+
+.sidebar-user{
+    margin: 0rem 0rem irem 0rem;
+    text-align: center;
+}
+
+.sidebar-user img{
+    width:130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid #efefef;
+}
+
+.sidebar-user h3{
+    font-size: 1rem;
+}
+
+.sidebar-user span{
+    font-size: .8rem;
+}
+
+.sidebar-menu{
+    margin-top: 3rem;
+}
+
+.menu-head{
+    text-transform: uppercase;
+    color: #8da2fb;
+    font-size: .8rem;
+    font-weight: 500;
+    margin-bottom: .8rem;
+}
+
+.sidebar-menu ul{
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-menu li{
+    margin-bottom: .9rem;
+}
+
+.sidebar-menu li a{
+    color: #efefef;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-menu li a span{
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.notification-icon {
+    position: relative;
+    font-size: 36px;
+    display: inline;
+    color: #555;
+    cursor: pointer;
+}
+
+    .notification-icon .badge {
+        position: absolute;
+        top: -5px;
+        right: -10px;
+        background-color: #ff3b3b;
+        color: white;
+        font-size: 12px;
+        font-weight: normal;
+        padding: 4px 8px;
+        border-radius: 50%;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+.icon-container {
+    position: relative;
+    display: inline-block;
+    font-size: 10px;
+    color: #333;
+}
+
+
+.MailBadge {
+    position: absolute;
+    top: -7px;
+    right: -8px;
+    background-color: #ff3b3b;
+    color: white;
+    font-size: 14px !important;
+    font-weight: normal;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ff3b3b;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 1rem 1.5rem;
+    position: fixed;
+    left: 280px;
+    width: calc(100% - 280px);
+    height:70px;
+    top: 0;
+    z-index: 20;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+    transition: left 300ms;
+}
+
+.menu-toggle label{
+    height: 60px;
+    width: 60px;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    border-radius:50%
+}
+
+.header-icons span{
+    display: inline-block;
+    margin-left: .7rem;
+    font-size: 1.6rem;
+}
+
+.menu-toggle label:hover{
+    background: #8da2fb;
+    opacity: 40%;
+}
+
+.main-content{
+    margin-left:280px ;
+    transition: margin-left 300ms;
+}
+
+main{
+    padding: 2rem;
+    min-height: calc(100vh - 70px);
+    margin-top:70px ;
+}
+
+.page-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-actions button{
+    outline: none;
+    color: #fff;
+    background: #8da2fb;
+    border:none;
+    padding: .6rem 1rem;
+    margin-left: 1rem;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.header-actions button span{
+    font-size: 1.2rem;
+    margin-right: .6rem;
+}
+
+.reports-us {
+    padding: 20px;
+    border-radius: 10px;
+    padding-top: 100px;
+    font-family: Arial, sans-serif;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .reports-us h2 {
+    margin-bottom: 20px;
+  }
+  
+  .reports-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .reports-form,
+  .reports-info {
+    width: 48%;
+    text-align: left;
+  }
+  
+  .reports-form h3,
+  .reports-info h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .reports-form input,
+  .reports-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .reports-form button {
+    width: 100%;
+    padding: 10px;
+    background-color:  #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.7s ease ;
+  }
+  
+  .reports-form button:hover {
+    background-color:  #004085;
+  }
+  
+  .reports-info p {
+    margin: 8px 0;
+    font-size: 14px;
+  }
+  
+  .reports-info i {
+    margin-right: 10px;
+    color: #007bff;
+  }
+
+  
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    background-color: transparent; /* Ensure no background is interfering */
+    border: none; /* Ensure no border is added */
+    width: 100%;
+}
+
+/* Dropdown menu will show on hover of .dropdown */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    left: 60%; /* Position to the right of the parent element */
+    bottom: 200;
+    background-color: #5850ec;
+    list-style: none;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Dropdown items styling */
+.dropdown-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-menu li a:hover {
+    background-color: #1a237e; /* Hover color */
+    border-radius: 3px;
+}
+
+.dropdown span{
+    font-size:1.6rem;
+    margin-right: .5rem;
+}
+
+

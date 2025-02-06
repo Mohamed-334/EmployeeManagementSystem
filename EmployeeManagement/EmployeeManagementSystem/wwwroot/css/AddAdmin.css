@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  #openForm_AddUser {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #openForm_AddUser:hover {
+    background-color: #0056b3;
+  }
+
+  .modal_AddUser {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .modal-content_AddUser {
+    background: white;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    width: 95%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+  }
+
+  .close_AddUser {
+    align-self: flex-start;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+  }
+
+  .close_AddUser:hover {
+    color: darkred;
+  }
+
+  .form-section_AddUser {
+    flex: 2;
+  }
+
+  .header-img_AddUser {
+    text-align: center;
+  }
+
+  .header-img_AddUser img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+    object-fit: cover;
+  }
+
+  .header-img_AddUser img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .header-img_AddUser input {
+    display: none;
+  }
+
+  .details-section_AddUser {
+    flex: 1;
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+
+  .details-section_AddUser.show {
+    max-width: 250px;
+    opacity: 1;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+  }
+
+  input, textarea, select, button {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #218838;
+  }
+
+  .radio-group_AddUser {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .radio-group_AddUser input {
+    margin-right: 5px;
+  }
+
+  .inline-fields_AddUser {
+    display: flex;
+    gap: 10px;
+  }
+
+  .inline-fields_AddUser > div {
+    flex: 1;
+  }
+
+  @media (max-width: 768px) {
+    .modal-content_AddUser {
+      flex-direction: column;
+    }
+
+    .details-section_AddUser {
+      max-width: 100%;
+    }
+  }

@@ -1,0 +1,23 @@
+﻿@using EmployeeManagementDatabase.Entities
+@model Job
+<div class="analytics-head" style="display:block">
+    <h2>
+        Task Name:
+    </h2>
+
+    <p style="text-align:center; font-size:larger"> @Model.TaskName</p>
+</div>
+
+<div>
+    <div class="analytics-note">
+        <h2>Task Description :</h2>
+        <p style="display:flex">
+            @Model.TaskDescription
+        </p>
+    </div>
+    <div>
+        <h2>Deadline:</h2>
+        <h6 style="font-size:larger; text-align:right">@Model.DeadLine.ToString("dd/MM/yyyy")</h6>
+    </div>
+
+</div>

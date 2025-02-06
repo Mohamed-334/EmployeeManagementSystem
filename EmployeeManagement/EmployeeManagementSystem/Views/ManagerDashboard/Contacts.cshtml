@@ -1,0 +1,61 @@
+﻿@using System.Security.Claims;
+@using Repository.Interfaces
+@inject IEmployeeRepository EmpRepo
+@{
+    Layout = "_UserDashboardLayout";
+    var UserId = User.Claims.FirstOrDefault(u => u.Type == ClaimTypes.NameIdentifier).Value;
+}
+@section Cards{
+    <Partial name="_EmployeeCardPartial"></Partial>
+}
+@section Chart{
+    <Partial name="_EmployeeChartPartial"></Partial>
+}
+<h3>Employee Contacts <small> <a asp-action="GetAllContacts" asp-controller="ManagerDashboard">See all employee Contacts</a> <span class="las la-arrow-right"></span></small></h3>
+<table width="100%">
+    <tbody>
+        <tr>
+            <td>
+                <div>
+                    <span class="indicator"></span>
+                </div>
+            </td>
+            <td><div>Employee Name</div></td>
+            <td><div>Email</div></td>
+            <td><div style="padding-left: 2rem;">Phone</div></td>
+            <td><div>Address</div></td>
+            @* <td><div><button style="padding: .7rem;">Add</button></div> </td> *@
+        </tr>
+
+        @foreach (var item in EmpRepo.GetTopRecordsByForeignKey(5, e => e.ManagerId == UserId).OrderBy(e => e.FirstName))
+        {
+            <tr>
+                <td>
+                    <div>
+                        <span class="indicator even"></span>
+                    </div>
+                </td>
+                <td><div>@item.FirstName @item.LastName</div></td>
+                <td><div>@item.Email</div></td>
+                @if(item.PhoneNumber is null)
+                {
+                    <td><div>Not Registered</div></td>
+                   
+                }
+                else
+                {
+                    <td><div>@item.PhoneNumber</div></td>
+                }
+                @if(item.Address is null)
+                {
+                    <td><div>Not Registered</div></td>
+                }
+                else
+                {
+                    <td><div>@item.Address</div></td>
+                }
+
+            </tr>
+        }
+    </tbody>
+</table>
