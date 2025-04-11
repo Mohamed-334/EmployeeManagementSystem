@@ -2,7 +2,7 @@ wwwroot\css\AddAdmin.css
 wwwroot\css\AddTask.css
 wwwroot\css\AdminDash.css
 wwwroot\css\attend.css
-wwwroot\css\Login.css
+wwwroot\css\LoginStyle.css
 wwwroot\css\Mailbox_media.css
 wwwroot\css\Mailbox_style.css
 wwwroot\css\Mails.css

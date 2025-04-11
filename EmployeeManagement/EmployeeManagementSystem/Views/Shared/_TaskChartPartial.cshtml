@@ -1,6 +1,10 @@
 ﻿@using Repository.Interfaces
+@using System.Security.Claims
 @inject IJobRepository JobRepo
-
+@{
+    var UserId = User.Claims.First(u => u.Type == ClaimTypes.NameIdentifier).Value;
+    var UserRole = User.Claims.First(u => u.Type == ClaimTypes.Role).Value;
+}
 <div class="analytics-card" id="analytics-card">
     <div class="analytics-head">
         <h3>Completed Task Percentage</h3>
@@ -8,9 +12,9 @@
     </div>
 
     <div class="analytics-chart">
-            <div class="chart-circle" style="--percentage: @JobRepo.GetCompletedTaskPercentage()">
+            <div class="chart-circle" style="--percentage: @JobRepo.GetCompletedTaskPercentage(UserId ,UserRole)">
                 <div class="chart-text">
-                    <h1>@JobRepo.GetCompletedTaskPercentage()%</h1>
+                    <h1>@JobRepo.GetCompletedTaskPercentage(UserId,UserRole)%</h1>
                 </div>
             </div>
 

@@ -1,4 +1,5 @@
 ﻿using EmployeeManagementDatabase.Entities;
+using EmployeeManagementDB.Entities;
 using EmployeeManagementSystem.Models;
 using EmployeeManagementSystemWebSite.Models;
 using Microsoft.AspNetCore.Identity;
@@ -18,13 +19,17 @@ namespace EmployeeManagementSystemWebSite.Controllers
         private readonly SignInManager<Employee> signIn;
         private readonly IPositionRepository positionRepo;
         private readonly IDepartmentRepository DeptRepo;
+        private readonly INotificationRepository NotifyRepo;
+        private readonly INotificationSeenRepository NotifySeenRepo;
 
-        public AccountController(UserManager<Employee> userManager, SignInManager<Employee> signIn, IPositionRepository position, IDepartmentRepository deptRepo)
+        public AccountController(UserManager<Employee> userManager, SignInManager<Employee> signIn, IPositionRepository position, IDepartmentRepository deptRepo, INotificationRepository notifyRepo, INotificationSeenRepository notifySeenRepo)
         {
             this.userManager = userManager;
             this.signIn = signIn;
             this.positionRepo = position;
             DeptRepo = deptRepo;
+            NotifyRepo = notifyRepo;
+            NotifySeenRepo = notifySeenRepo;
         }
         [HttpGet]
         public IActionResult OpenTheDashboard()
@@ -57,6 +62,19 @@ namespace EmployeeManagementSystemWebSite.Controllers
                     {
                         await signIn.SignInAsync(result,VM.RememberMe);
                         string Role = userManager.GetRolesAsync(result).Result.FirstOrDefault();
+                        Notification Notify = new()
+                        {
+                             NotificationMessage = $"Welcome To Your Dashboard ,{result.FullName}",
+                        };
+                        NotifyRepo.Add(Notify);
+                        NotificationSeen NotifySeen = new()
+                        {
+                            EmployeeId = result.Id,
+                            NotificationId = Notify.NotificationId,
+                            Seen = false,
+                            
+                        };
+                        
                         if (Role == "Admin")
                             return RedirectToAction("GetTopTasks", "AdminDashboard");
                         else if (Role == "Employee")

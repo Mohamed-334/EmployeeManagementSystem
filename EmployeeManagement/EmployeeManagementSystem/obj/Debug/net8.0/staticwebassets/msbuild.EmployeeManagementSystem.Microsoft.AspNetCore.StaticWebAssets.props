@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>cxbpmklguk</Fingerprint>
-      <Integrity>oP74O2CCiuYFsKrkj/6pDVh8UpWC1PjGcTl84fj5G/Q=</Integrity>
+      <Fingerprint>pdt1pke997</Fingerprint>
+      <Integrity>AwyB2XWTV9jFDc/1T7otm3ixD7t1H1utSe6w8GeA040=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\AddTask.css'))</OriginalItemSpec>
@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>p353ezkw5w</Fingerprint>
-      <Integrity>lbaHVvs0k307b3cNj+0q0TKut/9ziwcpCPP9C6NvEsk=</Integrity>
+      <Fingerprint>rdepr5rh9h</Fingerprint>
+      <Integrity>DzSxaa8H8d4RKwnYrwPO+nBR3OksT7sJU7+1xtsomyY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\AdminDash.css'))</OriginalItemSpec>
@@ -72,12 +72,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\attend.css'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Login.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\LoginStyle.css'))">
       <SourceType>Package</SourceType>
       <SourceId>EmployeeManagementSystem</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/EmployeeManagementSystem</BasePath>
-      <RelativePath>css/Login.css</RelativePath>
+      <RelativePath>css/LoginStyle.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -88,7 +88,7 @@
       <Integrity>ID0mwYcMcZtoHHSfHbt663C+qh1pev80kB6hwFW5DSM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Login.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\LoginStyle.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Mailbox_media.css'))">
       <SourceType>Package</SourceType>
@@ -408,8 +408,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>lmjpavunul</Fingerprint>
-      <Integrity>nfW5cP12VP4avwtjPCWFaK3SGG0DSDd9Ns4GFvcx78s=</Integrity>
+      <Fingerprint>jeqpe1zwek</Fingerprint>
+      <Integrity>FQwH9A7b/pWI617nVQYC5UfTezOdQQnlF01j3L1c4Gk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\AddTask.js'))</OriginalItemSpec>
@@ -462,8 +462,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>9tmajq5uhj</Fingerprint>
-      <Integrity>AwO5RN28Wg63mUWKRfbT9LPUp8IBW0G5RpbRI8gP7dQ=</Integrity>
+      <Fingerprint>ez47d5b7cg</Fingerprint>
+      <Integrity>Bhojo1nwhuvolT4GJsREi7r7GkW9zRGB7LVO+E2upUs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Register.js'))</OriginalItemSpec>

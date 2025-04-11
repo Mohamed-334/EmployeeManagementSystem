@@ -5,7 +5,7 @@ namespace Repository.Interfaces
 {
     public interface IJobRepository : IRepository<Job , int> , IGetByForeignKeyRepository<Job >,IGetTopRecords<Job> , IGetTotalRecordsNumber , IGetTopRecordsByForeignKey<Job>
     {
-        decimal GetCompletedTaskPercentage();
+        decimal GetCompletedTaskPercentage(string UserId , string Role);
         int GetTotalCompletedTasks();
         
     }

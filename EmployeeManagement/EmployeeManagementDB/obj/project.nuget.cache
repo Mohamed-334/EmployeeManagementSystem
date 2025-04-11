@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GKC/Eyum0XA=",
+  "dgSpecHash": "kPMeCKrHblA=",
   "success": true,
-  "projectFilePath": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementDB\\EmployeeManagementDB.csproj",
+  "projectFilePath": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementDB\\EmployeeManagementDB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Al-Huda\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Al-Huda\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

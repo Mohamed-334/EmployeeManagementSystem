@@ -9,10 +9,10 @@
     var UserId = User.Claims.First(e => e.Type == ClaimTypes.NameIdentifier).Value;
 }
 @section Cards{
-    <partial name="_EmployeeCardPartial">
+    <partial name="_TaskCardPartial">
         }
 @section Chart{
-<partial name="_EmployeeChartPartial">
+<partial name="_TaskChartPartial">
 }
 @section CSS{
             <link rel="stylesheet" href="~/css/AddTask.css">

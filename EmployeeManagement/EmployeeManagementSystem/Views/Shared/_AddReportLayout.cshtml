@@ -87,7 +87,7 @@
                                 Request
                             <ul class="dropdown-menu">
                                 <li><a asp-action="AddVacation" asp-controller="Request">Vacation</a></li>
-                                @if (!AttendanceRepo.GetAll().Any(a => a.Date == DateOnly.FromDateTime(DateTime.Now)))
+                                @if (!AttendanceRepo.GetByForeignKey(a => a.EmployeeId == UserId).Any(a => a.Date == DateOnly.FromDateTime(DateTime.Now)))
                                 {
 
                                     @if (RequestController.EmpAtt.IsStarted && !RequestController.EmpAtt.IsEnded)
@@ -153,7 +153,7 @@
                                 Request
                             <ul class="dropdown-menu">
                                 <li><a asp-action="AddVacation" asp-controller="Request">Vacation</a></li>
-                                @if (!AttendanceRepo.GetAll().Any(a => a.Date == DateOnly.FromDateTime(DateTime.Now)))
+                                @if (!AttendanceRepo.GetByForeignKey(a => a.EmployeeId == UserId).Any(a => a.Date == DateOnly.FromDateTime(DateTime.Now)))
                                 {
 
                                     @if (RequestController.EmpAtt.IsStarted && !RequestController.EmpAtt.IsEnded)
@@ -212,7 +212,7 @@
                                 Request
                             <ul class="dropdown-menu">
                                 <li><a asp-action="AddVacation" asp-controller="Request">Vacation</a></li>
-                                @if (!AttendanceRepo.GetAll().Any(a => a.Date == DateOnly.FromDateTime(DateTime.Now)))
+                                @if (!AttendanceRepo.GetByForeignKey(a => a.EmployeeId == UserId).Any(a => a.Date == DateOnly.FromDateTime(DateTime.Now)))
                                 {
 
                                     @if (RequestController.EmpAtt.IsStarted && !RequestController.EmpAtt.IsEnded)

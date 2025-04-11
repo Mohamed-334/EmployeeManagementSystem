@@ -1,26 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\",
+  "WorkspaceRootPath": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|d:\\programming section\\projects\\websites\\employee management system\\employeemanagement\\employeemanagementsystem\\views\\shared\\_addreportlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\views\\shared\\_addreportlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|d:\\programming section\\projects\\websites\\employee management system\\employee management\\employeemanagementsystem\\views\\shared\\_taskchartpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\views\\shared\\_taskchartpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|d:\\programming section\\projects\\websites\\employee management system\\employeemanagement\\employeemanagementsystem\\views\\shared\\_userdashboardlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\views\\shared\\_userdashboardlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|d:\\programming section\\projects\\websites\\employee management system\\employee management\\employeemanagementsystem\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|d:\\programming section\\projects\\websites\\employee management system\\employeemanagement\\employeemanagementsystem\\views\\request\\displayattendance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\views\\request\\displayattendance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|d:\\programming section\\projects\\websites\\employee management system\\employee management\\employeemanagementsystem\\views\\shared\\_registerlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\views\\shared\\_registerlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|d:\\programming section\\projects\\websites\\employee management system\\employeemanagement\\employeemanagementsystem\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|d:\\programming section\\projects\\websites\\employee management system\\employee management\\employeemanagementsystem\\controllers\\admindashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\controllers\\admindashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|d:\\programming section\\projects\\websites\\employee management system\\employee management\\employeemanagementsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28BB8676-091B-45F7-876A-64DAF2588400}|Repositories\\Repositories.csproj|d:\\programming section\\projects\\websites\\employee management system\\employee management\\repositories\\jobrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28BB8676-091B-45F7-876A-64DAF2588400}|Repositories\\Repositories.csproj|solutionrelative:repositories\\jobrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|d:\\programming section\\projects\\websites\\employee management system\\employee management\\employeemanagementsystem\\views\\userdashboard\\getallusertasks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\views\\userdashboard\\getallusertasks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|d:\\programming section\\projects\\websites\\employee management system\\employee management\\employeemanagementsystem\\views\\userdashboard\\gettopusertasks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\views\\userdashboard\\gettopusertasks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|d:\\programming section\\projects\\websites\\employee management system\\employee management\\employeemanagementsystem\\views\\shared\\_loginlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\views\\shared\\_loginlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|d:\\programming section\\projects\\websites\\employee management system\\employee management\\employeemanagementsystem\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|d:\\programming section\\projects\\websites\\employee management system\\employeemanagement\\employeemanagementsystem\\views\\managerdashboard\\gettoptasks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4C8129C-32B2-49CF-ABDE-912580F31858}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\views\\managerdashboard\\gettoptasks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,46 +50,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_AddReportLayout.cshtml",
-              "DocumentMoniker": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\Views\\Shared\\_AddReportLayout.cshtml",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Views\\Shared\\_AddReportLayout.cshtml",
-              "ToolTip": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\Views\\Shared\\_AddReportLayout.cshtml*",
-              "RelativeToolTip": "EmployeeManagementSystem\\Views\\Shared\\_AddReportLayout.cshtml*",
-              "ViewState": "AgIAAP8AAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-06T00:05:06.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RequestController.cs",
-              "DocumentMoniker": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\Controllers\\RequestController.cs",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Controllers\\RequestController.cs",
-              "ToolTip": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\Controllers\\RequestController.cs",
-              "RelativeToolTip": "EmployeeManagementSystem\\Controllers\\RequestController.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAiwE8AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T23:47:54.309Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DisplayAttendance.cshtml",
-              "DocumentMoniker": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\Views\\Request\\DisplayAttendance.cshtml",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Views\\Request\\DisplayAttendance.cshtml",
-              "ToolTip": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\Views\\Request\\DisplayAttendance.cshtml",
-              "RelativeToolTip": "EmployeeManagementSystem\\Views\\Request\\DisplayAttendance.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAmAAAAAAAAAA==",
+              "Title": "_RegisterLayout.cshtml",
+              "DocumentMoniker": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\Views\\Shared\\_RegisterLayout.cshtml",
+              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Views\\Shared\\_RegisterLayout.cshtml",
+              "ToolTip": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\Views\\Shared\\_RegisterLayout.cshtml",
+              "RelativeToolTip": "EmployeeManagementSystem\\Views\\Shared\\_RegisterLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-05T23:45:51.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T00:46:03.856Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Views\\Account\\Register.cshtml",
+              "ToolTip": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "EmployeeManagementSystem\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-06T00:48:26.961Z",
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -85,28 +92,100 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_UserDashboardLayout.cshtml",
-              "DocumentMoniker": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\Views\\Shared\\_UserDashboardLayout.cshtml",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Views\\Shared\\_UserDashboardLayout.cshtml",
-              "ToolTip": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\Views\\Shared\\_UserDashboardLayout.cshtml",
-              "RelativeToolTip": "EmployeeManagementSystem\\Views\\Shared\\_UserDashboardLayout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-05T21:14:26.488Z",
-              "EditorCaption": ""
+              "DocumentIndex": 3,
+              "Title": "AdminDashboardController.cs",
+              "DocumentMoniker": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\Controllers\\AdminDashboardController.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Controllers\\AdminDashboardController.cs",
+              "ToolTip": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\Controllers\\AdminDashboardController.cs",
+              "RelativeToolTip": "EmployeeManagementSystem\\Controllers\\AdminDashboardController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T23:54:55.052Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "GetTopTasks.cshtml",
-              "DocumentMoniker": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\Views\\ManagerDashboard\\GetTopTasks.cshtml",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Views\\ManagerDashboard\\GetTopTasks.cshtml",
-              "ToolTip": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\Views\\ManagerDashboard\\GetTopTasks.cshtml",
-              "RelativeToolTip": "EmployeeManagementSystem\\Views\\ManagerDashboard\\GetTopTasks.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAzAAAAAAAAAA==",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "EmployeeManagementSystem\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAAwEEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T15:43:38.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_TaskChartPartial.cshtml",
+              "DocumentMoniker": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\Views\\Shared\\_TaskChartPartial.cshtml",
+              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Views\\Shared\\_TaskChartPartial.cshtml",
+              "ToolTip": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\Views\\Shared\\_TaskChartPartial.cshtml",
+              "RelativeToolTip": "EmployeeManagementSystem\\Views\\Shared\\_TaskChartPartial.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-05T21:06:45.532Z"
+              "WhenOpened": "2025-02-24T19:30:14.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JobRepository.cs",
+              "DocumentMoniker": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\Repositories\\JobRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\JobRepository.cs",
+              "ToolTip": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\Repositories\\JobRepository.cs",
+              "RelativeToolTip": "Repositories\\JobRepository.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwCsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T19:00:44.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetAllUserTasks.cshtml",
+              "DocumentMoniker": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\Views\\UserDashboard\\GetAllUserTasks.cshtml",
+              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Views\\UserDashboard\\GetAllUserTasks.cshtml",
+              "ToolTip": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\Views\\UserDashboard\\GetAllUserTasks.cshtml",
+              "RelativeToolTip": "EmployeeManagementSystem\\Views\\UserDashboard\\GetAllUserTasks.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T18:59:37.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GetTopUserTasks.cshtml",
+              "DocumentMoniker": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\Views\\UserDashboard\\GetTopUserTasks.cshtml",
+              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Views\\UserDashboard\\GetTopUserTasks.cshtml",
+              "ToolTip": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\Views\\UserDashboard\\GetTopUserTasks.cshtml",
+              "RelativeToolTip": "EmployeeManagementSystem\\Views\\UserDashboard\\GetTopUserTasks.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T18:59:01.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_LoginLayout.cshtml",
+              "DocumentMoniker": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\Views\\Shared\\_LoginLayout.cshtml",
+              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Views\\Shared\\_LoginLayout.cshtml",
+              "ToolTip": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\Views\\Shared\\_LoginLayout.cshtml",
+              "RelativeToolTip": "EmployeeManagementSystem\\Views\\Shared\\_LoginLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T19:47:54.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RequestController.cs",
+              "DocumentMoniker": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\Controllers\\RequestController.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Controllers\\RequestController.cs",
+              "ToolTip": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\Controllers\\RequestController.cs",
+              "RelativeToolTip": "EmployeeManagementSystem\\Controllers\\RequestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T23:47:54.309Z"
             }
           ]
         }

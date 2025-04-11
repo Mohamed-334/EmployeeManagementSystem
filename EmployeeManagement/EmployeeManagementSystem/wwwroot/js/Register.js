@@ -10,7 +10,7 @@ fileInput.addEventListener('change', (event) => {
     if (file) {
         const reader = new FileReader();
         reader.onload = (e) => {
-            clickableImage.src = e.target.result; // Set the image to the uploaded file
+            clickableImage.src = e.target.result;
         };
         reader.readAsDataURL(file);
     }

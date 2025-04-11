@@ -330,7 +330,7 @@ main{
     margin-bottom: 2rem;
 }
 
-    .chart-circle::before {
+.chart-circle::before {
         content: '';
         position: absolute;
         top: 10px;

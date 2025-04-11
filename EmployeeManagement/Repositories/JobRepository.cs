@@ -34,10 +34,25 @@ namespace Repository
 
         public IEnumerable<Job> GetTopRecords(int RecordsNumber) => context.Jobs.Take(RecordsNumber).OrderBy(e => e.Employee.FirstName).ToList();
 
-        public decimal GetCompletedTaskPercentage()
+        public decimal GetCompletedTaskPercentage(string UserId , string Role)
         {
-            decimal Records = context.Jobs.Count();
-            decimal CompletedRecords = context.Jobs.Where( j => j.State == TaskState.Accepted).Count();
+            decimal Records = 0;
+            switch (Role)
+            {
+                case "Admin":
+                    Records = context.Jobs.Count();
+                    break;
+                case "Employee":
+                    Records = context.Jobs.Where(u => u.EmployeeId == UserId).Count();
+                    break;
+                case "Manager":
+                    var Manager = context.Employees.First(e => e.Id == UserId);
+                    var emps = Manager.EmployeesOfManager;
+                    Records = emps.SelectMany(e => e.Tasks).Count(u => u.State == TaskState.Accepted);
+                    break;
+            }
+
+                decimal CompletedRecords = context.Jobs.Where(j => j.State == TaskState.Accepted).Count();
             return Math.Round((CompletedRecords / Records)*100);
         }
 

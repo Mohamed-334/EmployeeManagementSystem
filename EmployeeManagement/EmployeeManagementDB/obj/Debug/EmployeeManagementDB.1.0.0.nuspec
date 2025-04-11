@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>EmployeeManagementDB</id>
+    <version>1.0.0</version>
+    <authors>EmployeeManagementDB</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="c682f28878fddb9f3588e955cc6c620983ee008c" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Microsoft.AspNetCore.Identity.EntityFrameworkCore" version="8.0.12" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="8.0.12" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Proxies" version="8.0.12" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="8.0.12" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="9.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/net8.0/bin/Debug/net8.0/AppSettings.json" buildAction="Content" />
+      <files include="any/net8.0/bin/Debug/net8.0/EmployeeManagementDB.deps.json" buildAction="Content" />
+      <files include="any/net8.0/bin/Debug/net8.0/EmployeeManagementDB.runtimeconfig.json" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="D:\Programming section\Projects\WebSites\Employee Management System\EmployeeManagement\EmployeeManagementDB\bin\Debug\net8.0\EmployeeManagementDB.runtimeconfig.json" target="lib\net8.0\EmployeeManagementDB.runtimeconfig.json" />
+    <file src="D:\Programming section\Projects\WebSites\Employee Management System\EmployeeManagement\EmployeeManagementDB\bin\Debug\net8.0\EmployeeManagementDB.dll" target="lib\net8.0\EmployeeManagementDB.dll" />
+    <file src="D:\Programming section\Projects\WebSites\Employee Management System\EmployeeManagement\EmployeeManagementDB\bin\Debug\net8.0\AppSettings.json" target="content\bin\Debug\net8.0\AppSettings.json" />
+    <file src="D:\Programming section\Projects\WebSites\Employee Management System\EmployeeManagement\EmployeeManagementDB\bin\Debug\net8.0\AppSettings.json" target="contentFiles\any\net8.0\bin\Debug\net8.0\AppSettings.json" />
+    <file src="D:\Programming section\Projects\WebSites\Employee Management System\EmployeeManagement\EmployeeManagementDB\bin\Debug\net8.0\EmployeeManagementDB.deps.json" target="content\bin\Debug\net8.0\EmployeeManagementDB.deps.json" />
+    <file src="D:\Programming section\Projects\WebSites\Employee Management System\EmployeeManagement\EmployeeManagementDB\bin\Debug\net8.0\EmployeeManagementDB.deps.json" target="contentFiles\any\net8.0\bin\Debug\net8.0\EmployeeManagementDB.deps.json" />
+    <file src="D:\Programming section\Projects\WebSites\Employee Management System\EmployeeManagement\EmployeeManagementDB\bin\Debug\net8.0\EmployeeManagementDB.runtimeconfig.json" target="content\bin\Debug\net8.0\EmployeeManagementDB.runtimeconfig.json" />
+    <file src="D:\Programming section\Projects\WebSites\Employee Management System\EmployeeManagement\EmployeeManagementDB\bin\Debug\net8.0\EmployeeManagementDB.runtimeconfig.json" target="contentFiles\any\net8.0\bin\Debug\net8.0\EmployeeManagementDB.runtimeconfig.json" />
+  </files>
+</package>

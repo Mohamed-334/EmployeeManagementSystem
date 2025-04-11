@@ -8326,11 +8326,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
+      "projectUniqueName": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
       "projectName": "EmployeeManagementSystem",
-      "projectPath": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
+      "projectPath": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
       "packagesPath": "C:\\Users\\Al-Huda\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementSystem\\obj\\",
+      "outputPath": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Editor\\VS\\Tools\\NuGetPackages"
@@ -8351,11 +8351,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementDB\\EmployeeManagementDB.csproj": {
-              "projectPath": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\EmployeeManagementDB\\EmployeeManagementDB.csproj"
+            "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementDB\\EmployeeManagementDB.csproj": {
+              "projectPath": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\EmployeeManagementDB\\EmployeeManagementDB.csproj"
             },
-            "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\Repositories\\Repositories.csproj": {
-              "projectPath": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\EmployeeManagement\\Repositories\\Repositories.csproj"
+            "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\Repositories\\Repositories.csproj": {
+              "projectPath": "D:\\Programming section\\Projects\\WebSites\\Employee Management System\\Employee Management\\Repositories\\Repositories.csproj"
             }
           }
         }
